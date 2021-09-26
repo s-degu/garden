@@ -1,9 +1,12 @@
 /* FontFamily */
-$base-font-family: "";
-$second-font-family: "";
+$base-font-family: 'Noto Sans JP', sans-serif;
+$second-font-family: 'Satisfy', cursive;
+$third-font-family: reross-quadratic, sans-serif;
 
 body {
   font-family: $base-font-family;
+  // font-family: $second-font-family;
+  // font-family: $third-font-family;
 }
 
 /* font-weight */
