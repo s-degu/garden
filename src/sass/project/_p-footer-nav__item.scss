@@ -1,0 +1,5 @@
+.p-footer-nav__item {
+    & + & {
+        margin-left: rem(32);
+    }
+}

@@ -184,6 +184,11 @@ select::-ms-expand {
   margin: 1px;
 }
 
+.l-footer {
+  padding-top: 48px;
+  padding-top: 3rem;
+}
+
 .l-header {
   height: 60px;
   padding: 0;
@@ -207,6 +212,103 @@ select::-ms-expand {
 
 .appp {
   margin: 1px;
+}
+
+.p-footer__copy {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+}
+
+.p-footer__copy small {
+  display: block;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.p-footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-footer__logo {
+  margin-top: 34px;
+  margin-top: 2.125rem;
+}
+
+.p-footer__logo > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-footer__logo img {
+  width: 166.48px;
+}
+
+.p-footer__nav {
+  margin-top: 41px;
+  margin-top: 2.5625rem;
+}
+
+.p-footer-nav__item + .p-footer-nav__item {
+  margin-left: 32px;
+  margin-left: 2rem;
+}
+
+.p-footer-nav__link {
+  display: block;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.p-footer-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: reross-quadratic, sans-serif;
+}
+
+.p-footer-sns__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2F2F2F;
+  color: #fff;
+  font-size: 25px;
+}
+
+.p-footer-sns__link {
+  display: block;
+}
+
+.p-footer-sns__link + .p-footer-sns__link {
+  margin-left: 40px;
+  margin-left: 2.5rem;
 }
 
 .p-header__inner {
