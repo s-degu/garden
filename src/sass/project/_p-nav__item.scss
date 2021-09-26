@@ -1,0 +1,6 @@
+.p-nav__item {
+    height: inherit;
+    & + & {
+        margin-left: rem(20);
+    }
+}
