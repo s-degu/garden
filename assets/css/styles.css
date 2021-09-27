@@ -18,6 +18,7 @@
 /* FontFamily */
 body {
   font-family: "Noto Sans JP", sans-serif;
+  color: #333;
 }
 
 /* font-weight */
@@ -194,6 +195,12 @@ select::-ms-expand {
   padding: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .l-header {
+    height: 90px;
+  }
+}
+
 .l-inner {
   width: 100%;
   padding-right: 20px;
@@ -271,6 +278,12 @@ select::-ms-expand {
   color: #333;
 }
 
+@media screen and (min-width: 768px) {
+  .p-footer-nav__link {
+    font-size: 1.125rem;
+  }
+}
+
 .p-footer-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,6 +313,23 @@ select::-ms-expand {
   background-color: #2F2F2F;
   color: #fff;
   font-size: 25px;
+  border: 1px solid #2F2F2F;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+  .p-footer-sns__icon:hover {
+    color: #2F2F2F;
+    background-color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-footer-sns__icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .p-footer-sns__link {
@@ -320,11 +350,26 @@ select::-ms-expand {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 16px;
+  padding-left: 1rem;
   padding-right: 16px;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__inner {
+    padding-left: 1.9375rem;
+    padding-right: 4.4375rem;
+  }
 }
 
 .p-header__logo {
   width: 55px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__logo {
+    width: 117.87px;
+  }
 }
 
 .p-header__logo > a {
@@ -333,6 +378,7 @@ select::-ms-expand {
 
 .p-header__nav {
   margin-left: auto;
+  height: inherit;
 }
 
 .p-header {
@@ -354,12 +400,28 @@ select::-ms-expand {
   color: #fff;
   height: inherit;
   display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .p-nav__link {
+    font-size: 1.125rem;
+  }
 }
 
 .p-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: inherit;
 }
 
 * {

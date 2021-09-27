@@ -2,6 +2,11 @@
     display: flex;
     height: inherit;
     align-items: center;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: rem(16);
+    padding-right: rem(16);
+    @include mq(md) {
+        padding-left: rem(31);
+        padding-right: rem(71);
+        
+    }
 }

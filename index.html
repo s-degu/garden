@@ -1,108 +1,119 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <!-- meta情報 -->
-  <title>Garden Salad</title>
-  <meta name="description" content="説明が入ります" />
-  <meta name="keywords" content="キーワードが入ります" />
-  <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <!-- ファビコン -->
-  <link rel="”icon”" href="" />
-  <!-- css -->
-  <link rel="stylesheet" href="./assets/css/styles.css">
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script defer type="text/javascript" src="./assets/js/script.js"></script>
-  <!-- フォント -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://use.typekit.net/dqc6jnl.css">
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <!-- ↓ヘッダー -->
-  <header class="header l-header p-header">
-    <div class="l-inner p-header__inner">
-      <div class="p-header__logo">
-        <a href="#">
-          <img src="./assets/images/logo_header.png" alt="gerden salad">
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>Garden Salad</title>
+    <meta name="description" content="説明が入ります" />
+    <meta name="keywords" content="キーワードが入ります" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer type="text/javascript" src="./assets/js/script.js"></script>
+    <!-- フォント -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://use.typekit.net/dqc6jnl.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- ↓ヘッダー -->
+    <header class="header l-header p-header">
+      <div class="l-inner p-header__inner">
+        <div class="p-header__logo">
+          <a href="#">
+            <img src="./assets/images/logo_header.png" alt="gerden salad" />
+          </a>
+        </div>
+        <nav class="p-header__nav p-nav">
+          <ul class="p-nav__list">
+            <li class="p-nav__item">
+              <a href="#" class="p-nav__link">about</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#" class="p-nav__link">menu</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#" class="p-nav__link">shop</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#" class="p-nav__link">contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="p-header__nav p-nav">
-        <ul class="p-nav__list">
-          <li class="p-nav__item">
-            <a href="#" class="p-nav__link">about</a>
-          </li>
-          <li class="p-nav__item">
-            <a href="#" class="p-nav__link">menu</a>
-          </li>
-          <li class="p-nav__item">
-            <a href="#" class="p-nav__link">shop</a>
-          </li>
-          <li class="p-nav__item">
-            <a href="#" class="p-nav__link">contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- ↑ヘッダー -->
+    </header>
+    <!-- ↑ヘッダー -->
 
-
-  <!-- ↓フッター -->
-  <footer class="footer l-footer p-footer">
-    <div class="p-footer__icons p-footer-sns">
-      <a href="#" class="p-footer-sns__link">
-      <div class="p-footer-sns__icon">
-          <i class="fab fa-twitter"></i>
+    <!-- ↓フッター -->
+    <footer class="footer l-footer p-footer">
+      <div class="l-inner">
+        <div class="p-footer__icons p-footer-sns">
+          <a href="#" class="p-footer-sns__link">
+            <div class="p-footer-sns__icon">
+              <i class="fab fa-twitter"></i>
+            </div>
+          </a>
+          <a href="#" class="p-footer-sns__link">
+            <div class="p-footer-sns__icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>
+          <a href="#" class="p-footer-sns__link">
+            <div class="p-footer-sns__icon">
+              <i class="fab fa-tiktok"></i>
+            </div>
+          </a>
         </div>
-      </a>
-      <a href="#" class="p-footer-sns__link">
-      <div class="p-footer-sns__icon">
-          <i class="fab fa-instagram"></i>
+        <div class="p-footer__nav p-footer-nav">
+          <ul class="p-footer-nav__list">
+            <li class="p-footer-nav__item">
+              <a href="#" class="p-footer-nav__link">about</a>
+            </li>
+            <li class="p-footer-nav__item">
+              <a href="#" class="p-footer-nav__link">menu</a>
+            </li>
+            <li class="p-footer-nav__item">
+              <a href="#" class="p-footer-nav__link">shop</a>
+            </li>
+            <li class="p-footer-nav__item">
+              <a href="#" class="p-footer-nav__link">contact</a>
+            </li>
+          </ul>
         </div>
-      </a>          
-      <a href="#" class="p-footer-sns__link">
-      <div class="p-footer-sns__icon">
-          <i class="fab fa-tiktok"></i>
+        <div class="p-footer__logo">
+          <a href="#">
+            <img src="./assets/images/logo_footer.jpg" alt="garden salad" />
+          </a>
         </div>
-      </a>
-    </div>
-    <div class="p-footer__nav p-footer-nav">
-      <ul class="p-footer-nav__list">
-        <li class="p-footer-nav__item">
-          <a href="#" class="p-footer-nav__link">about</a>
-        </li>
-        <li class="p-footer-nav__item">
-          <a href="#" class="p-footer-nav__link">menu</a>
-        </li>
-        <li class="p-footer-nav__item">
-          <a href="#" class="p-footer-nav__link">shop</a>
-        </li>
-        <li class="p-footer-nav__item">
-          <a href="#" class="p-footer-nav__link">contact</a>
-        </li>
-      </ul>
-    </div>
-    <div class="p-footer__logo">
-      <a href="#">
-        <img src="./assets/images/logo_footer.jpg" alt="garden salad">
-      </a>
-    </div>
-    <div class="p-footer__copy">
-      <small>&copy;TF Garden Salad.</small>
-    </div>
-  </footer>
-  <!-- ↑フッター -->
-
-</body>
+        <div class="p-footer__copy">
+          <small>&copy;TF Garden Salad.</small>
+        </div>
+      </div>
+    </footer>
+    <!-- ↑フッター -->
+  </body>
 </html>

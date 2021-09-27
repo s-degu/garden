@@ -1,5 +1,8 @@
 .p-header__logo {
     width: 55px;
+    @include mq(md) {
+        width: 117.87px;
+    }
 }
 
 .p-header__logo > a {

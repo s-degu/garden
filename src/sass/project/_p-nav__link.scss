@@ -1,7 +1,14 @@
 .p-nav__link {
-    text-transform:capitalize;
-    font-family: $third-font-family;
-    color: $white;
-    height: inherit;
-    display: block;
+  text-transform: capitalize;
+  font-family: $third-font-family;
+  color: $white;
+  height: inherit;
+  display: block;
+  font-size: rem(14);
+  height: inherit;
+  display: flex;
+  align-items: center;
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }

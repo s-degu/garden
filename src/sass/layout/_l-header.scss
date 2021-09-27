@@ -4,4 +4,7 @@ $header-height-sp: 60px;
 .l-header {
     height: $header-height-sp;
     padding: 0;
+    @include mq(md) {
+        height: $header-height-pc;
+    }
 }
