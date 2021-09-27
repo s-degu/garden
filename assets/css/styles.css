@@ -385,6 +385,80 @@ select::-ms-expand {
   background-color: #2F2F2F;
 }
 
+.p-hero__inner {
+  padding-top: 30px;
+  padding-top: 1.875rem;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  padding-right: 0;
+  padding-bottom: 23px;
+  padding-bottom: 1.4375rem;
+  background-image: url(../../../assets/images/img_mv_sp.jpg);
+  background-position: top right -70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-hero__sub-title {
+  margin-top: 15px;
+  margin-top: 0.9375rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+.p-hero__sub-title--green {
+  display: inline-block;
+  margin-top: 9px;
+  margin-top: 0.5625rem;
+  padding: 4px 8px 7px 3px;
+  padding: 0.25rem 0.5rem 0.4375rem 0.1875rem;
+  background-color: #159741;
+  color: #fff;
+}
+
+.p-hero__text-area {
+  padding-top: 48px;
+  padding-top: 3rem;
+  padding-bottom: 63px;
+  padding-bottom: 3.9375rem;
+  text-align: center;
+  padding-left: 16px;
+  padding-left: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+}
+
+.p-hero__text:first-of-type {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+.p-hero__text + .p-hero__text {
+  margin-top: 31px;
+  margin-top: 1.9375rem;
+}
+
+.p-hero__text--large {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.p-hero__title {
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-family: reross-quadratic, sans-serif;
+}
+
+.p-hero__title--green {
+  color: #159741;
+}
+
+.p-hero {
+  background-color: #2F2F2F;
+  color: #fff;
+}
+
 .p-nav__item {
   height: inherit;
 }
