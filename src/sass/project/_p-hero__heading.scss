@@ -1,3 +1,5 @@
 .p-hero__heading {
- 
+ @include mq(md) {
+     padding-left: rem(241);
+ }
 }

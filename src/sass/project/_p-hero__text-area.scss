@@ -1,4 +1,8 @@
 .p-hero__text-area {
+  @include mq(md) {
+    padding-bottom: rem(113);
+    padding-top: rem(120);
+  }
   padding-bottom: rem(63);
   padding-left: rem(16);
   padding-right: rem(16);
@@ -13,6 +17,14 @@
     display: block;
     font-family: $third-font-family;
     font-size: rem(115);
+    @include mq(md) {
+      bottom: -33px;
+      font-size: rem(280);
+      left: -43px;
+      text-align: left;
+      white-space: nowrap;
+    }
+    left: 0;
     line-height: 1;
     opacity: .3;
     position: absolute;
