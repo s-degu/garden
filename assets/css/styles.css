@@ -273,9 +273,9 @@ select::-ms-expand {
 }
 
 .p-footer-nav__link {
+  color: #333;
   display: block;
   text-transform: capitalize;
-  color: #333;
 }
 
 @media screen and (min-width: 768px) {
@@ -298,37 +298,37 @@ select::-ms-expand {
 }
 
 .p-footer-sns__icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #2F2F2F;
+  border: 1px solid #2F2F2F;
+  border-radius: 50%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 25px;
+  height: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #2F2F2F;
-  color: #fff;
-  font-size: 25px;
-  border: 1px solid #2F2F2F;
   -webkit-transition: color 0.3s, background-color 0.3s;
   transition: color 0.3s, background-color 0.3s;
-}
-
-@media screen and (min-width: 768px) {
-  .p-footer-sns__icon:hover {
-    color: #2F2F2F;
-    background-color: #fff;
-  }
+  width: 50px;
 }
 
 @media screen and (min-width: 768px) {
   .p-footer-sns__icon {
-    width: 40px;
     height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-footer-sns__icon:hover {
+    background-color: #fff;
+    color: #2F2F2F;
   }
 }
 
@@ -417,15 +417,33 @@ select::-ms-expand {
 }
 
 .p-hero__text-area {
-  padding-top: 48px;
-  padding-top: 3rem;
   padding-bottom: 63px;
   padding-bottom: 3.9375rem;
-  text-align: center;
   padding-left: 16px;
   padding-left: 1rem;
   padding-right: 16px;
   padding-right: 1rem;
+  padding-top: 48px;
+  padding-top: 3rem;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.p-hero__text-area::after {
+  bottom: -13px;
+  color: #676767;
+  content: "Garden Salad";
+  display: block;
+  font-family: reross-quadratic, sans-serif;
+  font-size: 115px;
+  font-size: 7.1875rem;
+  line-height: 1;
+  opacity: .3;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  z-index: -1;
 }
 
 .p-hero__text:first-of-type {

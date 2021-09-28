@@ -8,7 +8,6 @@ $breakpoints: (
   xl: 1440,
 );
 
-
 //メディアクエリー
 $mediaquerys: (
   sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
