@@ -1,0 +1,10 @@
+.p-about__title {
+  display: block;
+  font-size: rem(24);
+  font-weight: bold;
+  margin-bottom: rem(15);
+}
+
+.p-about__title--green {
+  color: $green;
+}

@@ -185,6 +185,13 @@ select::-ms-expand {
   margin: 1px;
 }
 
+.l-about {
+  padding-top: 64px;
+  padding-top: 4rem;
+  padding-bottom: 64px;
+  padding-bottom: 4rem;
+}
+
 .l-footer {
   padding-top: 48px;
   padding-top: 3rem;
@@ -203,8 +210,8 @@ select::-ms-expand {
 
 .l-inner {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -217,8 +224,116 @@ select::-ms-expand {
   }
 }
 
+.c-card__img-wrap {
+  position: relative;
+}
+
+.c-cards__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.c-section__title {
+  font-family: reross-quadratic, sans-serif;
+  font-size: 32px;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.c-section__title::after {
+  background-color: #159741;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50px;
+}
+
+.c-section__title--sub {
+  color: #159741;
+  display: block;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
 .appp {
   margin: 1px;
+}
+
+.p-about__c-card + .p-about__c-card {
+  margin-top: 56px;
+  margin-top: 3.5rem;
+}
+
+.p-about__c-cards {
+  margin-top: 56px;
+  margin-top: 3.5rem;
+}
+
+.p-about__img-wrap {
+  padding-top: 64.1399%;
+}
+
+.p-about__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-about__number {
+  display: inline-block;
+  position: absolute;
+  bottom: -23px;
+  right: -15px;
+  font-size: 180px;
+  font-size: 11.25rem;
+  color: #fff;
+  opacity: 0.8;
+  font-family: reross-quadratic, sans-serif;
+  line-height: 1;
+  z-index: -1;
+}
+
+.p-about__text-area {
+  letter-spacing: .05em;
+  padding-bottom: 34px;
+  padding-bottom: 2.125rem;
+  position: relative;
+  z-index: 1;
+}
+
+.p-about__title {
+  display: block;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+}
+
+.p-about__title--green {
+  color: #159741;
+}
+
+.p-about {
+  background-color: #F2F2F2;
 }
 
 .p-footer__copy {

@@ -1,0 +1,5 @@
+.p-about__c-card {
+    & + & {
+        margin-top: rem(56);
+    }
+}

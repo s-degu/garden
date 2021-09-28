@@ -1,0 +1,12 @@
+.p-about__number {
+    display: inline-block;
+    position: absolute;
+    bottom: -23px;
+    right: -15px;
+    font-size: rem(180);
+    color: $white;
+    opacity: 0.8;
+    font-family: $third-font-family;
+    line-height: 1;
+    z-index: $layer-background;
+}
