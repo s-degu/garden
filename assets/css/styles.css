@@ -192,6 +192,13 @@ select::-ms-expand {
   padding-bottom: 4rem;
 }
 
+@media screen and (min-width: 768px) {
+  .l-about {
+    padding-top: 8.125rem;
+    padding-bottom: 9.375rem;
+  }
+}
+
 .l-footer {
   padding-top: 48px;
   padding-top: 3rem;
@@ -232,10 +239,6 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .c-section__title {
@@ -245,6 +248,12 @@ select::-ms-expand {
   position: relative;
   text-align: center;
   text-transform: capitalize;
+}
+
+@media screen and (min-width: 768px) {
+  .c-section__title {
+    font-size: 3rem;
+  }
 }
 
 .c-section__title::after {
@@ -269,8 +278,30 @@ select::-ms-expand {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .c-section__title--sub {
+    font-size: 1.125rem;
+  }
+}
+
 .appp {
   margin: 1px;
+}
+
+.p-about__c-card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .p-about__c-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .p-about__c-card + .p-about__c-card {
@@ -278,13 +309,53 @@ select::-ms-expand {
   margin-top: 3.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .p-about__c-card + .p-about__c-card {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-about__c-card:nth-child(even) .p-about__img-wrap {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-about__c-card:nth-child(odd) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .p-about__c-card:nth-child(odd) .p-about__img-wrap {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
 .p-about__c-cards {
   margin-top: 56px;
   margin-top: 3.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .p-about__c-cards {
+    margin-top: 5rem;
+  }
+}
+
 .p-about__img-wrap {
   padding-top: 64.1399%;
+}
+
+@media screen and (min-width: 768px) {
+  .p-about__img-wrap {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.7439%;
+            flex: 0 0 41.7439%;
+    padding-top: 20.72%;
+  }
 }
 
 .p-about__img {
@@ -297,18 +368,33 @@ select::-ms-expand {
      object-fit: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .p-about__inner {
+    padding-left: 11.25rem;
+    padding-right: 11.375rem;
+  }
+}
+
 .p-about__number {
-  display: inline-block;
-  position: absolute;
   bottom: -23px;
-  right: -15px;
+  color: #fff;
+  display: inline-block;
+  font-family: reross-quadratic, sans-serif;
   font-size: 180px;
   font-size: 11.25rem;
-  color: #fff;
-  opacity: 0.8;
-  font-family: reross-quadratic, sans-serif;
   line-height: 1;
+  opacity: .8;
+  position: absolute;
+  right: -15px;
   z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .p-about__number {
+    font-size: 18rem;
+    right: 0;
+    top: 0;
+  }
 }
 
 .p-about__text-area {
@@ -319,6 +405,27 @@ select::-ms-expand {
   z-index: 1;
 }
 
+@media screen and (min-width: 768px) {
+  .p-about__text-area {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 52.411%;
+            flex: 0 0 52.411%;
+    font-size: 1.125rem;
+    padding-top: 4rem;
+  }
+}
+
+.p-about__text {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .p-about__text {
+    padding-right: 11.0625rem;
+    letter-spacing: .03em;
+  }
+}
+
 .p-about__title {
   display: block;
   font-size: 24px;
@@ -326,6 +433,13 @@ select::-ms-expand {
   font-weight: bold;
   margin-bottom: 15px;
   margin-bottom: 0.9375rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-about__title {
+    font-size: 1.875rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .p-about__title--green {
@@ -596,6 +710,7 @@ select::-ms-expand {
     bottom: -33px;
     font-size: 17.5rem;
     left: -43px;
+    overflow: hidden;
     text-align: left;
     white-space: nowrap;
   }
@@ -700,4 +815,8 @@ select::-ms-expand {
   display: -ms-flexbox;
   display: flex;
   height: inherit;
+}
+
+* {
+  outline: 1px solid red;
 }

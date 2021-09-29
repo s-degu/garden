@@ -1,0 +1,6 @@
+.p-about__inner {
+  @include mq(md) {
+    padding-left: rem(180);
+    padding-right: rem(182);
+  }
+}

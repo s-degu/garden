@@ -1,4 +1,9 @@
 .p-about__text-area {
+  @include mq(md) {
+    flex: 0 0 52.411%;
+    font-size: rem(18);
+    padding-top: rem(64);
+  }
   letter-spacing: .05em;
   padding-bottom: rem(34);
   position: relative;

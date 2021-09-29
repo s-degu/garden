@@ -1,4 +1,8 @@
 .l-about {
     padding-top: rem(64);
     padding-bottom: rem(64);
+    @include mq(md) {
+        padding-top: rem(130);
+        padding-bottom: rem(150);
+    }
 }

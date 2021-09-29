@@ -1,5 +1,29 @@
 .p-about__c-card {
-    & + & {
-        margin-top: rem(56);
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: row;
+  }
+  & + & {
+    margin-top: rem(56);
+    @include mq(md) {
+      margin-top: rem(64);
     }
+  }
+  &:nth-child(even) {
+      @include mq(md) {
+        .p-about__img-wrap {
+            margin-left: auto;
+        }
+      }
+  }
+  &:nth-child(odd) {
+    @include mq(md) {
+    //   background-color: magenta;
+      flex-direction: row-reverse;
+      .p-about__img-wrap {
+          margin-right: auto;
+          margin-left: 0;
+      }
+    }
+  }
 }
