@@ -284,6 +284,14 @@ select::-ms-expand {
   }
 }
 
+.c-section__title--menu {
+  color: #fff;
+}
+
+.c-section__title--menu::after {
+  background-color: #fff;
+}
+
 .appp {
   margin: 1px;
 }
@@ -778,6 +786,109 @@ select::-ms-expand {
   color: #fff;
 }
 
+.p-menu__body-wrap {
+  background-color: #fff;
+  margin-top: -56px;
+  padding: 10px;
+  padding: 0.625rem;
+}
+
+.p-menu__body {
+  border: 1px solid #2F2F2F;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  padding-left: 10px;
+  padding-left: 0.625rem;
+  padding-right: 10px;
+  padding-right: 0.625rem;
+  padding-top: 46px;
+  padding-top: 2.875rem;
+  text-align: center;
+}
+
+.p-menu__bottom-img {
+  background-attachment: fixed;
+  background-image: url(../../../assets/images/menu_bottom.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 66.6667%;
+  width: 100%;
+}
+
+.p-menu__calorie {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+
+.p-menu__ingredient {
+  color: #fff;
+  text-align: center;
+  margin-top: 48px;
+  margin-top: 3rem;
+}
+
+.p-menu__inner {
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+}
+
+.p-menu__name {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.p-menu__price {
+  font-family: reross-quadratic, sans-serif;
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+
+.p-menu__price--small {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+.p-menu__price--jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.p-menu__top-img {
+  background-attachment: fixed;
+  background-image: url(../../../assets/images/menu_top.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 66.6667%;
+  width: 100%;
+}
+
+.p-menu__wrap {
+  border: 1px solid #fff;
+  padding-bottom: 32px;
+  padding-bottom: 2rem;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  padding-right: 21px;
+  padding-right: 1.3125rem;
+  padding-top: 32px;
+  padding-top: 2rem;
+}
+
+.p-menu {
+  background-color: #2F2F2F;
+}
+
 .p-nav__item {
   height: inherit;
 }
@@ -817,6 +928,6 @@ select::-ms-expand {
   height: inherit;
 }
 
-* {
-  outline: 1px solid red;
+.p-section__title--sub {
+  color: #fff;
 }

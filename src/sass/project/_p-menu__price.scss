@@ -1,0 +1,15 @@
+.p-menu__price {
+  font-family: $third-font-family;
+  font-size: rem(30);
+  font-weight: bold;
+  margin-top: rem(16);
+}
+
+.p-menu__price--small {
+  font-size: rem(18);
+}
+
+.p-menu__price--jp {
+  font-family: $base-font-family;
+  font-size: rem(12);
+}
