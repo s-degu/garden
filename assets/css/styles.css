@@ -231,6 +231,11 @@ select::-ms-expand {
   }
 }
 
+.c-button {
+  display: inline-block;
+  border: 1px solid #2F2F2F;
+}
+
 .c-card__img-wrap {
   position: relative;
 }
@@ -286,6 +291,8 @@ select::-ms-expand {
 
 .c-section__title--menu {
   color: #fff;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
 }
 
 .c-section__title--menu::after {
@@ -791,6 +798,7 @@ select::-ms-expand {
   margin-top: -56px;
   padding: 10px;
   padding: 0.625rem;
+  position: relative;
 }
 
 .p-menu__body {
@@ -806,6 +814,11 @@ select::-ms-expand {
   text-align: center;
 }
 
+.p-menu__body-label {
+  padding-top: 127px;
+  padding-top: 7.9375rem;
+}
+
 .p-menu__bottom-img {
   background-attachment: fixed;
   background-image: url(../../../assets/images/menu_bottom.jpg);
@@ -816,11 +829,47 @@ select::-ms-expand {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .p-menu__bottom-img {
+    padding-top: 31.25%;
+  }
+}
+
+.p-menu__button {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.p-menu__button a {
+  padding-bottom: 17px;
+  padding-bottom: 1.0625rem;
+  padding-left: 37px;
+  padding-left: 2.3125rem;
+  padding-right: 58px;
+  padding-right: 3.625rem;
+  padding-top: 16px;
+  padding-top: 1rem;
+  position: relative;
+}
+
 .p-menu__calorie {
   font-size: 14px;
   font-size: 0.875rem;
   margin-top: 16px;
   margin-top: 1rem;
+}
+
+.p-menu__img-wrap {
+  position: relative;
+  padding-top: 103.9344%;
+  z-index: 2;
+}
+
+.p-menu__img-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .p-menu__ingredient {
@@ -835,6 +884,54 @@ select::-ms-expand {
   padding-top: 1.5rem;
   padding-bottom: 24px;
   padding-bottom: 1.5rem;
+}
+
+.p-menu__item + .p-menu__item {
+  margin-top: 48px;
+  margin-top: 3rem;
+}
+
+.p-menu__label {
+  background-color: #159741;
+  left: 50%;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+  padding-top: 40px;
+  padding-top: 2.5rem;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70.3333%;
+}
+
+.p-menu__label--en {
+  color: #fff;
+  display: block;
+  font-family: "Satisfy", cursive;
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.p-menu__label--jp {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.p-menu__list {
+  margin-top: 48px;
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .p-menu__name {
@@ -863,6 +960,38 @@ select::-ms-expand {
   font-size: 0.75rem;
 }
 
+.p-menu__sns-id {
+  text-align: center;
+  margin-top: 8px;
+  margin-top: 0.5rem;
+}
+
+.p-menu__sns-wrap {
+  background-color: #fff;
+  margin-top: 48px;
+  margin-top: 3rem;
+  padding: 10px;
+  padding: 0.625rem;
+  position: relative;
+}
+
+.p-menu__sns {
+  border: 1px solid #2F2F2F;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  padding-left: 10px;
+  padding-left: 0.625rem;
+  padding-right: 10px;
+  padding-right: 0.625rem;
+  padding-top: 64px;
+  padding-top: 4rem;
+}
+
+.p-menu__text {
+  padding: 0 12px;
+  padding: 0 0.75rem;
+}
+
 .p-menu__top-img {
   background-attachment: fixed;
   background-image: url(../../../assets/images/menu_top.jpg);
@@ -871,6 +1000,12 @@ select::-ms-expand {
   background-size: cover;
   padding-top: 66.6667%;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .p-menu__top-img {
+    padding-top: 31.25%;
+  }
 }
 
 .p-menu__wrap {
@@ -930,4 +1065,35 @@ select::-ms-expand {
 
 .p-section__title--sub {
   color: #fff;
+}
+
+.p-sns__label {
+  background-color: #159741;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-family: reross-quadratic, sans-serif;
+  padding-top: 10px;
+  padding-top: 0.625rem;
+  padding-bottom: 11px;
+  padding-bottom: 0.6875rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-left: 34px;
+  padding-left: 2.125rem;
+  padding-right: 34px;
+  padding-right: 2.125rem;
+}
+
+.fa-external-link-alt {
+  position: absolute;
+  top: 50%;
+  right: 17px1;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block;
 }

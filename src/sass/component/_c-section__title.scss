@@ -33,6 +33,7 @@
 
 .c-section__title--menu {
   color: $white;
+  padding-bottom: rem(12);
   &::after {
     background-color: $white;
   }

@@ -1,0 +1,5 @@
+.p-menu__item {
+    & + & {
+        margin-top: rem(48);
+    }
+}

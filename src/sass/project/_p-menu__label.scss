@@ -1,0 +1,27 @@
+.p-menu__label {
+  background-color: $green;
+  left: 50%;
+  padding-bottom: rem(16);
+  // margin-top: rem(-10);
+  padding-top: rem(40);
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  // margin-bottom: rem(24);
+  width: 70.3333%;
+}
+
+.p-menu__label--en {
+  color: $white;
+  display: block;
+  font-family: $second-font-family;
+  font-size: rem(12);
+  text-align: center;
+}
+
+.p-menu__label--jp {
+  color: $white;
+  display: block;
+  font-size: rem(18);
+  text-align: center;
+}

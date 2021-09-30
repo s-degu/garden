@@ -1,0 +1,15 @@
+.p-sns__label {
+    background-color: $green;
+    color: $white;
+    text-align: center;
+    font-size: rem(24);
+    font-family: $third-font-family;
+    padding-top: rem(10);
+    padding-bottom: rem(11);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: rem(34);
+    padding-right: rem(34);
+}

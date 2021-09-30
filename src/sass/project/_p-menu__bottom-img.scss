@@ -6,4 +6,7 @@
     background-size: cover;
     padding-top: 66.6667%;
     width: 100%;
+    @include mq(md) {
+        padding-top: 31.25%;
+    }
 }

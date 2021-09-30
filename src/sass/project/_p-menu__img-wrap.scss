@@ -1,0 +1,11 @@
+.p-menu__img-wrap {
+    position: relative;
+    padding-top: 103.9344%;
+    z-index: $layer-up;
+}
+
+.p-menu__img-wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
