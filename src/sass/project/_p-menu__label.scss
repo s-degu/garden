@@ -9,6 +9,11 @@
   transform: translateX(-50%);
   // margin-bottom: rem(24);
   width: 70.3333%;
+  @include mq(md) {
+    width: 46.48%;
+    padding-top: rem(9);
+    padding-bottom: rem(14);
+  }
 }
 
 .p-menu__label--en {
@@ -17,6 +22,9 @@
   font-family: $second-font-family;
   font-size: rem(12);
   text-align: center;
+  @include mq(md) {
+    font-size: rem(14);
+  }
 }
 
 .p-menu__label--jp {
@@ -24,4 +32,7 @@
   display: block;
   font-size: rem(18);
   text-align: center;
+  @include mq(md) {
+    font-size: rem(24);
+  }
 }

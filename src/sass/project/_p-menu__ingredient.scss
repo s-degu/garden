@@ -1,5 +1,9 @@
 .p-menu__ingredient {
-    color: $white;
-    text-align: center;
-    margin-top: rem(48);
+  color: $white;
+  @include mq(md) {
+    font-size: rem(18);
+    margin-top: rem(32);
+  }
+  margin-top: rem(48);
+  text-align: center;
 }

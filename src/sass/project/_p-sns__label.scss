@@ -1,15 +1,22 @@
 .p-sns__label {
-    background-color: $green;
-    color: $white;
-    text-align: center;
-    font-size: rem(24);
-    font-family: $third-font-family;
-    padding-top: rem(10);
-    padding-bottom: rem(11);
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-left: rem(34);
-    padding-right: rem(34);
+  background-color: $green;
+  color: $white;
+  font-family: $third-font-family;
+  font-size: rem(24);
+  left: 50%;
+  padding-bottom: rem(11);
+  padding-left: rem(34);
+  padding-right: rem(34);
+  padding-top: rem(10);
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transform: translateX(-50%);
+  @include mq(md) {
+      padding-bottom: rem(18);
+      padding-left: rem(107);
+      padding-right: rem(107);
+      padding-top: rem(18);
+      font-size: rem(30);
+  }
 }

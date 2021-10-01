@@ -1,3 +1,25 @@
 .p-menu__text {
-    padding: 0 rem(12);
+  @include mq(md) {
+    align-items: center;
+    display: flex;
+    font-size: rem(18);
+    justify-content: center;
+    text-align: center;
+    &::before,
+    &::after {
+      background-color: #333;
+      content: "";
+      height: 31px;
+      width: 1px;
+    }
+    &::before {
+      margin-right: 16px;
+      transform: rotate(-35deg);
+    }
+    &::after {
+      margin-left: 16px;
+      transform: rotate(35deg);
+    }
+  }
+  padding: 0 rem(12);
 }

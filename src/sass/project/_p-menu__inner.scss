@@ -1,4 +1,7 @@
 .p-menu__inner {
-    padding-top: rem(24);
-    padding-bottom: rem(24);
+  @include mq(md) {
+    padding: rem(72);
+  }
+  padding-bottom: rem(24);
+  padding-top: rem(24);
 }

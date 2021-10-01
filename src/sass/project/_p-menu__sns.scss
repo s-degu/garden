@@ -1,5 +1,8 @@
 .p-menu__sns {
   border: 1px solid $base-color;
+  @include mq(md) {
+    padding-top: rem(96);
+  }
   padding-bottom: rem(24);
   padding-left: rem(10);
   padding-right: rem(10);

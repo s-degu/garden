@@ -37,4 +37,7 @@
   &::after {
     background-color: $white;
   }
+  @include mq(md) {
+    padding-bottom: rem(16);
+  }
 }

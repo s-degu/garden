@@ -3,4 +3,7 @@
   margin-top: -56px;
   padding: rem(10);
   position: relative;
+  @include mq(md) {
+    padding: rem(13);
+  }
 }

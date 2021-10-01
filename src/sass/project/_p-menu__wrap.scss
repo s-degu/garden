@@ -4,4 +4,7 @@
   padding-left: rem(20);
   padding-right: rem(21);
   padding-top: rem(32);
+  @include mq(md) {
+    padding-top: rem(80);
+  }
 }

@@ -1,4 +1,8 @@
 .p-menu__name {
   font-size: rem(24);
   font-weight: bold;
+  letter-spacing: 0.1em;
+  @include mq(md) {
+    font-size: rem(30);
+  }
 }

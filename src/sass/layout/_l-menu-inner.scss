@@ -1,0 +1,6 @@
+.l-menu-inner {
+    @include mq(md) {
+        padding-left: rem(88);
+        padding-right: rem(88);
+    }
+}
