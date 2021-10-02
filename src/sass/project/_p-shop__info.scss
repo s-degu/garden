@@ -1,0 +1,9 @@
+.p-shop__info {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: rem(24);
+  @include mq(md) {
+    flex: 0 0 50%;
+  }
+}

@@ -1,0 +1,12 @@
+.p-shop-letter__footer {
+text-align: right;
+font-family: $second-font-family;
+color: $green;
+}
+
+.p-shop-letter__footer span {
+  font-size: rem(36);
+  transform: rotate(-8deg);
+  display: inline-block;
+  border-bottom: 4px double $green;
+}

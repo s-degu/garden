@@ -1,0 +1,21 @@
+.p-shop__map {
+  padding-top: 66.6667%;
+  position: relative;
+  width: 100%;
+  height: 0;
+  max-width: rem(1440);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(56);
+  @include mq(md) {
+      padding-top: 32.2917%;
+  }
+}
+
+.p-shop__map iframe {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,22 @@
+.p-shop__letter {
+  background-color: $white;
+  box-shadow: 0 8px 22px -2px;
+  margin-top: rem(98);
+  padding-left: rem(10);
+  padding-right: rem(10);
+  padding-top: rem(18);
+  position: relative;
+  &::after {
+    background-image: url(../../../assets/images/stamp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: rem(93);
+    left: -18px;
+    position: absolute;
+    top: -39px;
+    width: rem(112);
+  }
+}
