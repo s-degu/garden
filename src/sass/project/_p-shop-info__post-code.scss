@@ -1,5 +1,8 @@
 .p-shop-info__post-code {
-    letter-spacing: 0.03em;
-    display: block;
-    width: 100%;
+  display: block;
+  @include mq(md) {
+    font-size: rem(18);
+  }
+  letter-spacing: .03em;
+  width: 100%;
 }

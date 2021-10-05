@@ -1,4 +1,7 @@
 .p-shop-info__address {
-    display: block;
-    width: 100%;
+  display: block;
+  @include mq(md) {
+    font-size: rem(18);
+  }
+  width: 100%;
 }

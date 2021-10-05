@@ -1,0 +1,7 @@
+.l-shop__letter {
+  @include mq(md) {
+    max-width: rem(1140);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

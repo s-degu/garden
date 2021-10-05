@@ -1,7 +1,11 @@
 .p-shop-letter__footer {
-text-align: right;
-font-family: $second-font-family;
-color: $green;
+  text-align: right;
+  font-family: $second-font-family;
+  color: $green;
+  position: relative;
+  @include mq(md) {
+    flex: 0 0 rem(304);
+  }
 }
 
 .p-shop-letter__footer span {
@@ -9,4 +13,11 @@ color: $green;
   transform: rotate(-8deg);
   display: inline-block;
   border-bottom: 4px double $green;
+  @include mq(md) {
+    font-size: rem(40);
+    position: absolute;
+    bottom: 0;
+    left: -34px;
+    text-align: left;
+  }
 }

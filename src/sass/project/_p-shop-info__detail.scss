@@ -1,4 +1,7 @@
 .p-shop-info__detail {
+  @include mq(md) {
+    width: 75.5132%;
+  }
   line-height: 1.7;
   margin-left: auto;
   width: 68.5132%;

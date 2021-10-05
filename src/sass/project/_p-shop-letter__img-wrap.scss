@@ -1,0 +1,7 @@
+.p-shop-letter__img-wrap {
+    display: flex;
+    flex-direction: column;
+    @include mq(md) {
+        flex-direction: row;
+    }
+}

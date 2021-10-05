@@ -4,6 +4,8 @@
   flex-wrap: wrap;
   margin-top: rem(24);
   @include mq(md) {
-    flex: 0 0 50%;
+    font-size: rem(18);
+    width: 57.9729%;
+
   }
 }

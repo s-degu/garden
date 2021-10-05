@@ -2,4 +2,8 @@
   font-family: $second-font-family;
   font-size: rem(30);
   letter-spacing: 0.05em;
+  @include mq(md) {
+    flex: 0 0 18.8%;
+    font-size: rem(48);
+  }
 }

@@ -18,5 +18,16 @@
     position: absolute;
     top: -39px;
     width: rem(112);
+    @include mq(md) {
+      width: rem(288);
+      height: rem(240);
+      top: -98px;
+      left: -117px;
+    }
+  }
+  @include mq(md) {
+    padding-top: rem(30);
+    padding-left: rem(34);
+    padding-right: rem(32);
   }
 }

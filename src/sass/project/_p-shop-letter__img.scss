@@ -1,18 +1,27 @@
 .p-shop-letter__img {
   position: relative;
   &:first-of-type {
+    @include mq(md) {
+      padding-top: 39.8517%;
+      width: 58.2947%;
+    }
     padding-top: 87.3065%;
   }
-  &:last-of-type {
-      padding-top: 64.7059%;
+  &:nth-of-type(2) {
+    padding-top: 64.7059%;
+    @include mq(md) {
+      width: 41.7053%;
+      padding-top: 0;
+    }
   }
 }
 
-.p-shop-letter__img img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.p-shop-letter__img img {
+  height: 100%;
+  // height: auto;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }

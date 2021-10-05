@@ -1,0 +1,6 @@
+.p-shop__inner {
+    @include mq(md) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

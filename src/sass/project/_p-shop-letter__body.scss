@@ -1,4 +1,19 @@
 .p-shop-letter__body {
+  // :last-child {
+  //   @include mq(md) {
+  //     margin-top: auto;
+
+  //   }
+  // }
+  display: flex;
+  flex-direction: column;
+  @include mq(md) {
+    // justify-content: space-between;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
   margin-top: rem(20);
   padding-bottom: rem(42);
   padding-left: rem(14);

@@ -1,7 +1,21 @@
 .p-shop-letter__text {
-    line-height: 2.5;
-    // text-decoration: underline 1px #C4C4C4;
-    border-bottom: 1px solid #C4C4C4;
-    display: inline;
-    padding-bottom: rem(5);
+  // border-bottom: 1px solid #c4c4c4;
+  // display: inline;
+  
+  
+  @include mq(md) {
+    flex: 0 0  55.46%;
+    margin-left: rem(52);
+  }
+  line-height: 2.5;
+  padding-bottom: rem(5);
+}
+
+.p-shop-letter__text--underline {
+  // display: inline;
+  // text-decoration: underline 2px #C4C4C4;
+  // text-underline-offset: rem(11);
+  border-bottom: 2px solid #C4C4C4;
+  // background: linear-gradient(transparent 97%, #C4C4C4 97%);
+
 }
