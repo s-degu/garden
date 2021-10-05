@@ -1,10 +1,8 @@
 .p-shop-letter__text {
   // border-bottom: 1px solid #c4c4c4;
   // display: inline;
-  
-  
   @include mq(md) {
-    flex: 0 0  55.46%;
+    flex: 0 0 55.46%;
     margin-left: rem(52);
   }
   line-height: 2.5;
@@ -12,10 +10,17 @@
 }
 
 .p-shop-letter__text--underline {
-  // display: inline;
   // text-decoration: underline 2px #C4C4C4;
   // text-underline-offset: rem(11);
-  border-bottom: 2px solid #C4C4C4;
+  // border-bottom: 2px solid #c4c4c4;
   // background: linear-gradient(transparent 97%, #C4C4C4 97%);
-
+  background-image: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0) 0%,
+  rgba(0, 0, 0, 0) 97%,
+  #ddd 97%,
+  #ddd 100%
+  );
+  background-size: 100% 2.5em;
+  display: inline-block;
 }

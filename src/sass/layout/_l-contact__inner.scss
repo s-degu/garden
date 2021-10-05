@@ -1,0 +1,6 @@
+.l-contact__inner {
+    padding-top: rem(64);
+  @include mq(md) {
+    max-width: rem(800);
+  }
+}

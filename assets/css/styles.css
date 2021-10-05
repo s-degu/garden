@@ -15,10 +15,26 @@
   }
 }
 
+.l-inner {
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .l-inner {
+    max-width: 1490px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
 /* FontFamily */
 body {
-  font-family: "Noto Sans JP", sans-serif;
   color: #333;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 /* font-weight */
@@ -199,6 +215,31 @@ select::-ms-expand {
   }
 }
 
+.l-contact__inner {
+  padding-top: 64px;
+  padding-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .l-contact__inner {
+    max-width: 50rem;
+  }
+}
+
+.l-contact {
+  padding-top: 64px;
+  padding-top: 4rem;
+  padding-bottom: 64px;
+  padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .l-contact {
+    padding-top: 8.125rem;
+    padding-bottom: 8.125rem;
+  }
+}
+
 .l-footer {
   padding-top: 48px;
   padding-top: 3rem;
@@ -212,22 +253,6 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .l-header {
     height: 90px;
-  }
-}
-
-.l-inner {
-  width: 100%;
-  padding-right: 16px;
-  padding-left: 16px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .l-inner {
-    max-width: 1490px;
-    padding-right: 25px;
-    padding-left: 25px;
   }
 }
 
@@ -493,6 +518,25 @@ select::-ms-expand {
 
 .p-about {
   background-color: #F2F2F2;
+}
+
+.p-contact__wrap {
+  background-color: #F2F2F2;
+  padding-top: 64px;
+  padding-top: 4rem;
+  padding-bottom: 64px;
+  padding-bottom: 4rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  padding-right: 15px;
+  padding-right: 0.9375rem;
+}
+
+.p-contact {
+  background-image: url(../../../assets/images/contact_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .p-footer__copy {
@@ -1694,14 +1738,17 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-shop-letter__text {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0  55.46%;
-            flex: 0 0  55.46%;
+        -ms-flex: 0 0 55.46%;
+            flex: 0 0 55.46%;
     margin-left: 3.25rem;
   }
 }
 
 .p-shop-letter__text--underline {
-  border-bottom: 2px solid #C4C4C4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(97%, rgba(0, 0, 0, 0)), color-stop(97%, #ddd), to(#ddd));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 97%, #ddd 97%, #ddd 100%);
+  background-size: 100% 2.5em;
+  display: inline-block;
 }
 
 .p-shop {
