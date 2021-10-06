@@ -9,4 +9,12 @@
   padding-right: rem(58);
   padding-top: rem(16);
   position: relative;
+  transition: background-color .3s, color .3s;
+  &:hover {
+    @include mq(md) {
+      background-color: #333;
+      color: $white;
+      opacity: 1;
+    }
+  }
 }
