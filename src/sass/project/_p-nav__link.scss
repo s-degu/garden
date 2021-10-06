@@ -1,14 +1,33 @@
 .p-nav__link {
-  text-transform: capitalize;
-  font-family: $third-font-family;
+  align-items: center;
   color: $white;
-  height: inherit;
   display: block;
+  display: flex;
+  font-family: $third-font-family;
   font-size: rem(14);
   height: inherit;
-  display: flex;
-  align-items: center;
+  height: inherit;
   @include mq(md) {
     font-size: rem(18);
+  }
+  position: relative;
+  text-transform: capitalize;
+  &::after {
+    @include mq(md) {
+      background-color: $green;
+      content: "";
+      height: 2px;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 62%;
+      transition: opacity .3s ease;
+      width: 100%;
+    }
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
   }
 }
