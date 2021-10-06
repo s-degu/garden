@@ -1575,11 +1575,13 @@ input[type="checkbox"]:checked + .p-form__check::after {
 
 .p-privacy__link {
   display: inline-block;
-  letter-spacing: 0.05em;
+  letter-spacing: .05em;
 }
 
 .p-privacy__link--green {
   color: #159741;
+  display: inline-block;
+  text-decoration: underline;
 }
 
 .p-privacy__text {
