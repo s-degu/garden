@@ -1,0 +1,15 @@
+.p-menu__gallary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  @include mq(md) {
+    flex-wrap: nowrap;
+    gap: 16px;
+    margin-top: rem(31);
+    overflow-x: scroll;
+  }
+  @include mq(xl) {
+    justify-content: center;
+  }
+  margin-top: rem(24);
+}

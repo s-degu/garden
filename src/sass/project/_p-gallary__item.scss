@@ -1,0 +1,13 @@
+.p-gallary__item {
+  @include mq(md) {
+    width: 231px;
+  }
+  width: calc(100% / 2 - 10px / 2);
+}
+
+.p-gallary__item img {
+  @include mq(md) {
+    width: 231px;
+    max-width: 231px;
+  }
+}
