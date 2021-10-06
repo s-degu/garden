@@ -1488,26 +1488,46 @@ input[type="checkbox"]:checked + .p-form__check::after {
 }
 
 .p-nav__link {
-  text-transform: capitalize;
-  font-family: reross-quadratic, sans-serif;
-  color: #fff;
-  height: inherit;
-  display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  height: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #fff;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: reross-quadratic, sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  height: inherit;
+  height: inherit;
+  position: relative;
+  text-transform: capitalize;
 }
 
 @media screen and (min-width: 768px) {
   .p-nav__link {
     font-size: 1.125rem;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .p-nav__link::after {
+    background-color: #159741;
+    content: "";
+    height: 2px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 62%;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    width: 100%;
+  }
+}
+
+.p-nav__link:hover::after {
+  opacity: 1;
 }
 
 .p-nav__list {
