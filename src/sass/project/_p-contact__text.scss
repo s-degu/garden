@@ -1,0 +1,7 @@
+.p-contact__text {
+  letter-spacing: .03em;
+  margin-top: rem(48);
+  @include mq(md) {
+    text-align: center;
+  }
+}

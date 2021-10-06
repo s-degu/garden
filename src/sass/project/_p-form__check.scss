@@ -1,0 +1,38 @@
+.p-form__check {
+  cursor: pointer;
+  padding-left: 43px;
+  position: relative;
+}
+
+.p-form__check::before,
+.p-form__check::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.p-form__check::before {
+  background-color: #fff;
+  border: 1px solid $base-color;
+  border-radius: 0;
+  height: 30px;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+}
+
+.p-form__check::after {
+  border-bottom: 2px solid $green;
+  border-left: 2px solid $green;
+  height: 14px;
+  left: 9px;
+  opacity: 0;
+  top: 2px;
+  transform: rotate(-45deg);
+  width: 22px;
+}
+
+input[type="checkbox"]:checked + .p-form__check::after {
+  opacity: 1;
+}

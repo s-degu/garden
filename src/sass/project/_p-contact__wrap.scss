@@ -4,4 +4,9 @@
   padding-bottom: rem(64);
   padding-left: rem(16);
   padding-right: rem(15);
+  @include mq(md) {
+    max-width: rem(800);
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

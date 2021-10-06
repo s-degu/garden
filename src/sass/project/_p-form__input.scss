@@ -1,0 +1,26 @@
+.p-form__input input {
+  border: 1px solid $base-color;
+  margin-top: rem(6);
+  padding-bottom: rem(17);
+  padding-left: rem(16);
+  padding-right: rem(13);
+  padding-top: rem(16);
+  width: 100%;
+  @include mq(md) {
+    padding-top: rem(13);
+    padding-bottom: rem(13);
+    padding-left: rem(23);
+    padding-right: rem(23);
+  }
+}
+
+.p-form__input textarea {
+  border: 1px solid $base-color;
+  margin-top: rem(6);
+  min-height: 160px;
+  padding-bottom: rem(17);
+  padding-left: rem(16);
+  padding-right: rem(13);
+  padding-top: rem(16);
+  resize: vertical;
+}

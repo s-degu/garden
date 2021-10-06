@@ -1,0 +1,15 @@
+.p-form__label {
+  background-color: $green;
+  border-radius: rem(6);
+  color: $white;
+  font-size: rem(12);
+  @include mq(md) {
+    margin-left: rem(16);
+  }
+  line-height: 1;
+  margin-left: rem(10);
+  padding-bottom: rem(3);
+  padding-left: rem(8);
+  padding-right: rem(8);
+  padding-top: rem(3);
+}
