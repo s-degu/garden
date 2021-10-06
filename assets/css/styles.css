@@ -614,6 +614,7 @@ select::-ms-expand {
 .p-footer-nav__link {
   color: #333;
   display: block;
+  position: relative;
   text-transform: capitalize;
 }
 
@@ -621,6 +622,31 @@ select::-ms-expand {
   .p-footer-nav__link {
     font-size: 1.125rem;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .p-footer-nav__link::after {
+    background: #159741;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    visibility: hidden;
+    width: 100%;
+  }
+}
+
+.p-footer-nav__link:hover {
+  opacity: 1;
+}
+
+.p-footer-nav__link:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .p-footer-nav__list {
