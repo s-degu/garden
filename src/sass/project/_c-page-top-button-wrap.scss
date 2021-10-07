@@ -1,0 +1,20 @@
+.c-page-top-button-wrap {
+  background-color: $main-color;
+  border: 2px solid #333;
+  border-radius: 50%;
+  bottom: 2%;
+  height: 70px;
+  @include mq(md) {
+    // bottom: 60px;
+    height: rem(120);
+    min-height: 80px;
+    min-width: 80px;
+    // right: 60px;
+    width: rem(120);
+  }
+  position: fixed;
+  right: 2%;
+  text-align: center;
+  width: 70px;
+  z-index: $layer-floating;
+}

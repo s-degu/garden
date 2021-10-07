@@ -1,0 +1,41 @@
+.c-triangle,
+.c-triangle::before,
+.c-triangle::after {
+  background: #333;
+  height: 13px;
+  @include mq(md) {
+    height: rem(25);
+    width: rem(25);
+  }
+  width: 13px;
+}
+
+.c-triangle::before,
+.c-triangle::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.c-triangle {
+  border-top-left-radius: 30%;
+  @include mq(md) {
+    left: 30%;
+    top: rem(-15);
+  }
+  left: 38%;
+  position: relative;
+  top: -6px;
+  transform: rotate(30deg) skewY(30deg) scaleX(.86666);
+}
+
+.c-triangle::before {
+  border-top-right-radius: 30%;
+  transform: skewX(-45deg) translateX(50%);
+}
+
+.c-triangle::after {
+  border-bottom-left-radius: 30%;
+  transform: skewY(-45deg) translateY(50%);
+}

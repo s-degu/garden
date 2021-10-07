@@ -2,7 +2,7 @@
 
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
-  var topBtn = $('.pagetop');
+  var topBtn = $('.js-page-top');
   topBtn.hide(); // ボタンの表示設定
 
   $(window).scroll(function () {

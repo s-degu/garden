@@ -294,6 +294,27 @@ select::-ms-expand {
   display: flex;
 }
 
+.c-page-top-button {
+  bottom: 13px;
+  font-family: reross-quadratic, sans-serif;
+  font-size: 12px;
+  font-size: 0.75rem;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .c-page-top-button {
+    font-size: 1rem;
+    bottom: 20px;
+  }
+}
+
 .c-section__title {
   font-family: reross-quadratic, sans-serif;
   font-size: 32px;
@@ -355,8 +376,83 @@ select::-ms-expand {
   }
 }
 
+.c-triangle,
+.c-triangle::before,
+.c-triangle::after {
+  background: #333;
+  height: 13px;
+  width: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .c-triangle,
+  .c-triangle::before,
+  .c-triangle::after {
+    height: 1.5625rem;
+    width: 1.5625rem;
+  }
+}
+
+.c-triangle::before,
+.c-triangle::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.c-triangle {
+  border-top-left-radius: 30%;
+  left: 38%;
+  position: relative;
+  top: -6px;
+  -webkit-transform: rotate(30deg) skewY(30deg) scaleX(0.86666);
+          transform: rotate(30deg) skewY(30deg) scaleX(0.86666);
+}
+
+@media screen and (min-width: 768px) {
+  .c-triangle {
+    left: 30%;
+    top: -0.9375rem;
+  }
+}
+
+.c-triangle::before {
+  border-top-right-radius: 30%;
+  -webkit-transform: skewX(-45deg) translateX(50%);
+          transform: skewX(-45deg) translateX(50%);
+}
+
+.c-triangle::after {
+  border-bottom-left-radius: 30%;
+  -webkit-transform: skewY(-45deg) translateY(50%);
+          transform: skewY(-45deg) translateY(50%);
+}
+
 .appp {
   margin: 1px;
+}
+
+.c-page-top-button-wrap {
+  background-color: #f2f2f2;
+  border: 2px solid #333;
+  border-radius: 50%;
+  bottom: 2%;
+  height: 70px;
+  position: fixed;
+  right: 2%;
+  text-align: center;
+  width: 70px;
+  z-index: 30;
+}
+
+@media screen and (min-width: 768px) {
+  .c-page-top-button-wrap {
+    height: 7.5rem;
+    min-height: 80px;
+    min-width: 80px;
+    width: 7.5rem;
+  }
 }
 
 .p-about__c-card {
