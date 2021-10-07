@@ -47,4 +47,57 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
+
+
+
+
+
+
+
+
+  //モーダル
+  var $body = $('body'); //変数の設定
+  var scrollTop; //スクロール量を保存
+  
+  //スクロールを固定
+  function bodyFixedOn() {
+    scrollTop = $(window).scrollTop();
+    
+    $body.css({
+      position: 'fixed',
+      top: -scrollTop
+    });
+  }
+  
+  //スクロールの固定を解除
+  function bodyFixedOff() {
+    $body.css({
+      position: '',
+      top: ''
+    });
+    
+    $(window).scrollTop(scrollTop);
+  }
+  
+  //モーダルのトリガーをクリックしたとき
+  $('.js-modal-open').on('click', function() {
+    bodyFixedOn();
+  });
+  
+  $('.js-modal-open').on('click',function(){
+    $('.js-modal').fadeIn();
+    return false;
+  });
+  
+  //モーダルのオーバーレイをクリックしたとき
+  $('.js-modal-close').on('click', function() {
+    bodyFixedOff();
+  });
+  
+  $('.js-modal-close').on('click',function(){
+    $('.js-modal').fadeOut();
+    return false;
+  });
 });
+
+

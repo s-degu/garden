@@ -1,0 +1,18 @@
+.p-modal__content {
+  background: #fff;
+  left: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  z-index: $layer-modal;
+  @include mq(md) {
+    width: 75%;
+    padding: 62px;
+    max-height: 90%;
+
+  }
+}

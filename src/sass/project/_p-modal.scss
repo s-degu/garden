@@ -1,0 +1,10 @@
+.p-modal {
+  display: none;
+  // display: block;
+  height: 100vh;
+  overflow-y: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $layer-up;
+}
