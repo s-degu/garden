@@ -31,11 +31,12 @@ jQuery(function ($) {
   }); // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
   $(document).on('click', 'a[href*="#"]', function () {
-    var time = 400;
-    var header = $('header').innerHeight();
+    var time = 400; // let header = $('header').innerHeight();
+
     var target = $(this.hash);
-    if (!target.length) return;
-    var targetY = target.offset().top - header;
+    if (!target.length) return; // let targetY = target.offset().top - header;
+
+    var targetY = target.offset().top;
     $('html,body').animate({
       scrollTop: targetY
     }, time, 'swing');

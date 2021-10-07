@@ -30,30 +30,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(".js-drawer-open").toggleClass("open");
     $(".drawer-menu").toggleClass("open");
     $("html").toggleClass("is-fixed");
-
   });
 
-
-
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
-
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
-    let header = $('header').innerHeight();
+    // let header = $('header').innerHeight();
     let target = $(this.hash);
     if (!target.length) return;
-    let targetY = target.offset().top - header;
+    // let targetY = target.offset().top - header;
+    let targetY = target.offset().top;
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
-
-
-
-
-
-
-
-
 
   //モーダル
   var $body = $('body'); //変数の設定
