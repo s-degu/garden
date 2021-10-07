@@ -1,0 +1,13 @@
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  &:hover,
+  &:active,
+  &:focus {
+    @include mq(md) {
+      border-color: $green;
+      box-shadow: 0 0 4px 0 #159741;
+    }
+  }
+}

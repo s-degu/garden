@@ -2191,3 +2191,20 @@ input[type="checkbox"]:checked + .p-form__check::after {
           transform: translateY(-50%);
   display: inline-block;
 }
+
+@media screen and (min-width: 768px) {
+  input[type="text"]:hover, input[type="text"]:active, input[type="text"]:focus,
+  input[type="email"]:hover,
+  input[type="email"]:active,
+  input[type="email"]:focus,
+  input[type="tel"]:hover,
+  input[type="tel"]:active,
+  input[type="tel"]:focus,
+  textarea:hover,
+  textarea:active,
+  textarea:focus {
+    border-color: #159741;
+    -webkit-box-shadow: 0 0 4px 0 #159741;
+            box-shadow: 0 0 4px 0 #159741;
+  }
+}
