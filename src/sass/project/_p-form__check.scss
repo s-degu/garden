@@ -2,6 +2,24 @@
   cursor: pointer;
   padding-left: 43px;
   position: relative;
+  &:hover,
+  &:active,
+  &:focus {
+    &::before {
+      @include mq(md) {
+        border-color: $green;
+        box-shadow: 0 0 4px 0 #159741;
+      }
+    }
+  }
+  // &:checked {
+  //   &::before {
+  //     @include mq(md) {
+  //       // background-color: rgba($color: #159741, $alpha: .15);
+  //       background-color: #333;
+  //     }
+  //   }
+  // }
 }
 
 .p-form__check::before,
@@ -31,6 +49,13 @@
   top: -1px;
   transform: rotate(-45deg);
   width: 22px;
+}
+
+input[type="checkbox"]:checked + .p-form__check::before {
+  // background-color: #333;
+  background-color: rgba($color: #159741, $alpha: .15);
+  border-color: $green;
+  box-shadow: 0 0 4px 0 #159741;
 }
 
 input[type="checkbox"]:checked + .p-form__check::after {

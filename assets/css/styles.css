@@ -808,6 +808,14 @@ select::-ms-expand {
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .p-form__check:hover::before, .p-form__check:active::before, .p-form__check:focus::before {
+    border-color: #159741;
+    -webkit-box-shadow: 0 0 4px 0 #159741;
+            box-shadow: 0 0 4px 0 #159741;
+  }
+}
+
 .p-form__check::before,
 .p-form__check::after {
   content: "";
@@ -837,6 +845,13 @@ select::-ms-expand {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   width: 22px;
+}
+
+input[type="checkbox"]:checked + .p-form__check::before {
+  background-color: rgba(21, 151, 65, .15);
+  border-color: #159741;
+  -webkit-box-shadow: 0 0 4px 0 #159741;
+          box-shadow: 0 0 4px 0 #159741;
 }
 
 input[type="checkbox"]:checked + .p-form__check::after {
