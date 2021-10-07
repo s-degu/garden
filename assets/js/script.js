@@ -81,4 +81,41 @@ jQuery(function ($) {
     $('.js-modal').fadeOut();
     return false;
   });
-});
+}); //google map api
+
+window.initMap = function () {
+  var map;
+  var area = document.getElementById("map"); // マップを表示させるHTMLの箱
+  // マップの中心位置(例:原宿駅)
+
+  var center = {
+    lat: 34.7024854,
+    lng: 135.4937619
+  };
+  var styles = [//地図全体の色味をカスタマイズ
+  //グレースケールにするために、saturation(彩度)を最低値-100に設定
+  {
+    stylers: [{
+      saturation: -100
+    }]
+  }]; //マップ作成
+
+  map = new google.maps.Map(area, {
+    center: center,
+    zoom: 17,
+    styles: styles
+  }); //マーカーオプション設定
+
+  var markerOption = {
+    position: center,
+    // マーカーを立てる位置を指定
+    map: map,
+    // マーカーを立てる地図を指定
+    icon: {
+      url: '../../assets/images/google_map_pin.png' // お好みの画像までのパスを指定
+
+    }
+  }; //マーカー作成
+
+  var marker = new google.maps.Marker(markerOption);
+};

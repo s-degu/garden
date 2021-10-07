@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script defer type="text/javascript" src="./assets/js/script.js"></script>
+    <!-- <script defer type="text/javascript" src="./assets/js/script.js"></script> -->
     <!-- フォント -->
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
@@ -222,8 +222,9 @@
         <span class="c-section__title--sub">店舗詳細</span>
         <h2 class="c-section__title">shop</h2>
       </div>
-      <div class="l-inner p-shop__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1052.5805190571818!2d139.70630752464044!3d35.667459484553945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca3fa654067%3A0x47ce7910bafb3c84!2z44K344Oj44ON44OrIOihqOWPgumBkw!5e0!3m2!1sja!2sjp!4v1633074509012!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="l-inner p-shop__map-wrap">
+        <div id="map" class="p-shop__map"></div>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1052.5805190571818!2d139.70630752464044!3d35.667459484553945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca3fa654067%3A0x47ce7910bafb3c84!2z44K344Oj44ON44OrIOihqOWPgumBkw!5e0!3m2!1sja!2sjp!4v1633074509012!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
       </div>
       <div class="l-inner p-shop__inner">
         <div class="p-shop-info__wrap">
@@ -424,5 +425,11 @@
     </a>
     </div>
     <!-- ↑ページトップ -->
+
+    <!-- "YOUR_API_KEY" の部分に、作成したAPIキーを貼り付ける -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGjAgqrCu-P028ssTeKFBcIxp0UL25Hvk&callback=initMap" async defer></script>
+
+    <!-- 👇このjsファイル内にAPIを使用した記述を書く（後述） -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

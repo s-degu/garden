@@ -1976,7 +1976,7 @@ input[type="checkbox"]:checked + .p-form__check::after {
   }
 }
 
-.p-shop__map {
+.p-shop__map-wrap {
   padding-top: 66.6667%;
   position: relative;
   width: 100%;
@@ -1990,12 +1990,12 @@ input[type="checkbox"]:checked + .p-form__check::after {
 }
 
 @media screen and (min-width: 768px) {
-  .p-shop__map {
+  .p-shop__map-wrap {
     padding-top: 32.2917%;
   }
 }
 
-.p-shop__map iframe {
+.p-shop__map {
   left: 0;
   position: absolute;
   top: 0;
