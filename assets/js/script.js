@@ -89,8 +89,8 @@ window.initMap = function () {
   // マップの中心位置(例:原宿駅)
 
   var center = {
-    lat: 34.7024854,
-    lng: 135.4937619
+    lat: 34.702485,
+    lng: 135.495951
   };
   var styles = [//地図全体の色味をカスタマイズ
   //グレースケールにするために、saturation(彩度)を最低値-100に設定

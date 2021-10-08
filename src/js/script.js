@@ -97,8 +97,8 @@ window.initMap = () => {
   const area = document.getElementById("map"); // マップを表示させるHTMLの箱
 // マップの中心位置(例:原宿駅)
   const center = {
-    lat: 34.7024854,
-    lng: 135.4937619
+    lat: 34.702485,
+    lng: 135.495951
   };
 
   const styles = [
@@ -129,4 +129,5 @@ window.initMap = () => {
 
   //マーカー作成
   const marker = new google.maps.Marker(markerOption);
+
 }
