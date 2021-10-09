@@ -617,6 +617,21 @@ select::-ms-expand {
   background-color: #f2f2f2;
 }
 
+.p-contact__message {
+  text-align: center;
+  margin-top: 60px;
+  margin-top: 3.75rem;
+  display: none;
+}
+
+.p-contact__message--error {
+  text-align: center;
+  margin-top: 60px;
+  margin-top: 3.75rem;
+  color: #f00;
+  display: none;
+}
+
 .p-contact__text {
   letter-spacing: .03em;
   margin-top: 48px;
@@ -944,7 +959,7 @@ input[type="checkbox"]:checked + .p-form__check::after {
 }
 
 .p-form__submit {
-  background-color: #159741;
+  background-color: #BDBDBD;
   color: #fff;
   font-size: 18px;
   font-size: 1.125rem;
@@ -956,7 +971,19 @@ input[type="checkbox"]:checked + .p-form__check::after {
   padding-bottom: 0.875rem;
   padding-top: 15px;
   padding-top: 0.9375rem;
+  -webkit-transition: background-color .3s, opacity .3s;
+  transition: background-color .3s, opacity .3s;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .p-form__submit:hover {
+    opacity: .7;
+  }
+}
+
+.p-form__submit.-active {
+  background-color: #159741;
 }
 
 .p-form__title {

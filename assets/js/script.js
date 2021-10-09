@@ -80,7 +80,58 @@ jQuery(function ($) {
   $('.js-modal-close').on('click', function () {
     $('.js-modal').fadeOut();
     return false;
+  }); //google form
+  // let $form = ( '.js-form' ) //formタグにつけたクラス、ID名を指定
+  // $form.submit(function(e) { 
+  //   $.ajax({ 
+  //    url: $form.attr('action'), 
+  //    data: $form.serialize(), 
+  //    type: "POST", 
+  //    dataType: "xml", 
+  //    statusCode: { 
+  //      0: function() { 
+  //         //送信に成功したときの処理
+  //         $form.slideUp()
+  //         $( '.js-success' ).slideDown()
+  //       }, 
+  //       200: function() { 
+  //         //送信に失敗したときの処理 
+  //         $form.slideUp()
+  //         $( '.js-error' ).slideDown()
+  //       }
+  //     } 
+  //   });
+  //   return false; 
+  // });
+  //formの入力確認
+
+  var $submit = $('.js-submit');
+  $('.js-form input, .js-form textarea').on('change', function () {
+    //inputとtextareaが変更されたとき
+    if ($('.js-form input[type="text"]').val() !== "" && // inputのテキストタイプが空でない
+    $('.js-form input[type="email"]').val() !== "" && // inputのメールタイプが空でない
+    $('.js-form textarea').val() !== "" && // テキストエリアが空でない
+    $('.js-form input[name="contact-privacy"]').prop('checked') === true //チェックボックスにチェックが入っている
+    ) {
+      $submit.prop('disabled', false); // 送信ボタンのdisabledを外す
+
+      $submit.addClass('-active'); // -activeクラスを付与する
+    } else {
+      // それ以外の場合
+      $submit.prop('disabled', true); // 送信ボタンのdisableを付ける
+
+      $submit.removeClass('-active'); // -activeクラスを外す
+    }
+  }); //スクロールヒント
+
+  new ScrollHint('.js-scrollable', {
+    scrollHintIconAppendClass: 'scroll-hint-icon-white',
+    enableOverflowScrolling: true,
+    i18n: {
+      scrollable: 'スクロールできます'
+    }
   });
+  enableOverflowScrolling;
 }); //google map api
 
 window.initMap = function () {

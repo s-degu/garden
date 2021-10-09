@@ -18,9 +18,11 @@
     <!-- ファビコン -->
     <link rel="”icon”" href="" />
     <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/scroll-hint@1.1.10/css/scroll-hint.css">
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js"></script>
     <!-- <script defer type="text/javascript" src="./assets/js/script.js"></script> -->
     <!-- フォント -->
     <link
@@ -189,7 +191,7 @@
               <div class="p-sns__label">Instagram</div>
               <div class="p-menu__sns">
                 <p class="p-menu__text">Instagramにはさらに詳しいメニュー内容などを載せています！</p>
-                <div class="p-menu__gallary p-gallary">
+                <div class="p-menu__gallary p-gallary js-scrollable">
                     <div class="p-gallary__item">
                       <img src="./assets/images/instagram_01.jpg" alt="野菜">
                     </div>
@@ -284,7 +286,7 @@
             <h2 class="c-section__title">contact</h2>
           </div>
           <p class="p-contact__text">ご質問などは、下記のフォームよりお問い合わせください。</p>
-          <form class="p-contact__form p-form" action="post">
+          <form class="p-contact__form p-form js-form" action="post">
             <dl class="p-form__wrap">
               <div class="p-form__item">
                 <dt class="p-form__title"><label for="name">お名前<span class="p-form__label">必須</span></label></dt>
@@ -307,12 +309,17 @@
               <input type="checkbox" name="contact-privacy" id="privacy">
               <label class="p-form__check" for="privacy"></label>
               <a class="p-privacy__link js-modal-open" href="#"><span class="p-privacy__link--green">プライバシーポリシー</span>に同意する。</a>
-
             </div>
             <div class="p-form__submit-wrap">
-              <button class="p-form__submit" id="form-submit" type="submit">送信</button>
+              <button disabled class="p-form__submit js-submit" id="form-submit" type="submit">送信</button>
             </div>
           </form>
+          <div class="p-contact__message js-success">
+            <p>送信完了しました。ありがとうございました。</p>
+          </div>
+          <div class="p-contact__message--error js-error">
+            <p>送信に失敗しました。ページを更新して再度送信してください。</p>
+          </div>
         </div>
       </div>
       <!-- ↓モーダル用 -->
@@ -430,6 +437,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGjAgqrCu-P028ssTeKFBcIxp0UL25Hvk&callback=initMap" async defer></script>
 
     <!-- 👇このjsファイル内にAPIを使用した記述を書く -->
+
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

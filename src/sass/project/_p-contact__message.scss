@@ -1,0 +1,12 @@
+.p-contact__message {
+    text-align: center;
+    margin-top: rem(60);
+    display: none;
+}
+
+.p-contact__message--error {
+    text-align: center;
+    margin-top: rem(60);
+    color: #f00;
+    display: none;
+}
