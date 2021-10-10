@@ -1,0 +1,32 @@
+.p-shop__heading--sp {
+  display: block;
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.p-shop__heading--pc {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+
+
+.p-shop__name {
+  @include mq(md) {
+    display: inline-block;
+  }
+}
+
+.p-shop__heading--pc .p-shop__name--small {
+  @include mq(md) {
+    display: inline-block;
+  }
+}
+
+.p-shop__heading--pc .p-shop__name--jp {
+  @include mq(md) {
+    display: inline-block;
+  }
+}

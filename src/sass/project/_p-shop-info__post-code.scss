@@ -2,6 +2,7 @@
   display: block;
   @include mq(md) {
     font-size: rem(18);
+    margin-top: rem(25);
   }
   letter-spacing: .03em;
   width: 100%;

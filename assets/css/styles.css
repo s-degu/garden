@@ -21,6 +21,8 @@
   padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 600px;
+  max-width: 37.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -1887,6 +1889,44 @@ input[type="checkbox"]:checked + .p-form__check::after {
   color: #fff;
 }
 
+.p-shop__heading--sp {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .p-shop__heading--sp {
+    display: none;
+  }
+}
+
+.p-shop__heading--pc {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .p-shop__heading--pc {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-shop__name {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-shop__heading--pc .p-shop__name--small {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-shop__heading--pc .p-shop__name--jp {
+    display: inline-block;
+  }
+}
+
 .p-shop__img-wrap {
   margin-top: 40px;
   margin-top: 2.5rem;
@@ -1943,6 +1983,7 @@ input[type="checkbox"]:checked + .p-form__check::after {
   .p-shop__info {
     font-size: 1.125rem;
     width: 57.9729%;
+    margin-top: 0;
   }
 }
 
@@ -2105,6 +2146,7 @@ input[type="checkbox"]:checked + .p-form__check::after {
 @media screen and (min-width: 768px) {
   .p-shop-info__post-code {
     font-size: 1.125rem;
+    margin-top: 1.5625rem;
   }
 }
 
