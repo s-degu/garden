@@ -21,14 +21,14 @@ jQuery(function ($) {
     }, 300, 'swing');
     return false;
   }); //ドロワーメニュー
-
-  $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
-  }); // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
+  // $("#MenuButton").click(function () {
+  //   // $(".l-drawer-menu").toggleClass("is-show");
+  //   // $(".p-drawer-menu").toggleClass("is-show");
+  //   $(".js-drawer-open").toggleClass("open");
+  //   $(".drawer-menu").toggleClass("open");
+  //   $("html").toggleClass("is-fixed");
+  // });
+  // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
   $(document).on('click', 'a[href*="#"]', function () {
     var time = 400; // let header = $('header').innerHeight();

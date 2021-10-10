@@ -848,6 +848,8 @@ select::-ms-expand {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .p-form__check::after {
@@ -860,6 +862,8 @@ select::-ms-expand {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   width: 22px;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 input[type="checkbox"]:checked + .p-form__check::before {

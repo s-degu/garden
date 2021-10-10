@@ -23,13 +23,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //ドロワーメニュー
-  $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
-  });
+  // $("#MenuButton").click(function () {
+  //   // $(".l-drawer-menu").toggleClass("is-show");
+  //   // $(".p-drawer-menu").toggleClass("is-show");
+  //   $(".js-drawer-open").toggleClass("open");
+  //   $(".drawer-menu").toggleClass("open");
+  //   $("html").toggleClass("is-fixed");
+  // });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
