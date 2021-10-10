@@ -293,23 +293,23 @@
             <h2 class="c-section__title">contact</h2>
           </div>
           <p class="p-contact__text">ご質問などは、下記のフォームよりお問い合わせください。</p>
-          <form class="p-contact__form p-form js-form" action="post">
+          <form id="form" class="p-contact__form p-form js-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfzRmoiUwU5T0MA8nJo06dYtdm5KXgkmnCpPvyyyVEYZzCYmQ/formResponse">
             <dl class="p-form__wrap">
               <div class="p-form__item">
                 <dt class="p-form__title"><label for="name">お名前<span class="p-form__label">必須</span></label></dt>
-                <dd class="p-form__input"><input type="text" name="name" id="name" placeholder="例 ) 山田　花子"></dd>
+                <dd class="p-form__input"><input type="text" name="entry.2005620554" id="name" placeholder="例 ) 山田　花子"></dd>
               </div>
               <div class="p-form__item">
                 <dt class="p-form__title"><label for="email">メールアドレス<span class="p-form__label">必須</span></label></dt>
-                <dd class="p-form__input"><input type="email" name="email" id="email" placeholder="例 ) hanako-yamada@example.com"></dd>
+                <dd class="p-form__input"><input type="email" name="entry.1045781291" id="email" placeholder="例 ) hanako-yamada@example.com"></dd>
               </div>
               <div class="p-form__item">
                 <dt class="p-form__title"><label for="tel">電話番号</label></dt>
-                <dd class="p-form__input"><input type="tel" name="tel" id="tel" placeholder="例 ) 090-0000-0000"></dd>
+                <dd class="p-form__input"><input type="tel" name="entry.1166974658" id="tel" placeholder="例 ) 090-0000-0000"></dd>
               </div>
               <div class="p-form__item">
                 <dt class="p-form__title"><label for="message">お問い合わせ内容<span class="p-form__label">必須</span></label></dt>
-                <dd class="p-form__input"><textarea name="message" id="message" placeholder="例 ) ご質問やお問い合わせ内容をご記入ください。"></textarea></dd>
+                <dd class="p-form__input"><textarea name="entry.839337160" id="message" placeholder="例 ) ご質問やお問い合わせ内容をご記入ください。"></textarea></dd>
               </div>
             </dl>
             <div class="p-form__privacy p-privacy">
@@ -318,7 +318,7 @@
               <a class="p-privacy__link js-modal-open" href="#"><span class="p-privacy__link--green">プライバシーポリシー</span>に同意する。</a>
             </div>
             <div class="p-form__submit-wrap">
-              <button disabled class="p-form__submit js-submit" id="form-submit" type="submit">送信</button>
+              <input disabled class="p-form__submit js-submit" id="form-submit" type="submit">
             </div>
           </form>
           <div class="p-contact__message js-success">
@@ -442,9 +442,9 @@
 
     <!-- "YOUR_API_KEY" の部分に、作成したAPIキーを貼り付ける -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGjAgqrCu-P028ssTeKFBcIxp0UL25Hvk&callback=initMap" async defer></script>
-
+    <!-- 👇Ajax利用のため Google form用 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- 👇このjsファイル内にAPIを使用した記述を書く -->
-
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

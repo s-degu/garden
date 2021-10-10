@@ -81,29 +81,32 @@ jQuery(function ($) {
     $('.js-modal').fadeOut();
     return false;
   }); //google form
-  // let $form = ( '.js-form' ) //formタグにつけたクラス、ID名を指定
-  // $form.submit(function(e) { 
-  //   $.ajax({ 
-  //    url: $form.attr('action'), 
-  //    data: $form.serialize(), 
-  //    type: "POST", 
-  //    dataType: "xml", 
-  //    statusCode: { 
-  //      0: function() { 
-  //         //送信に成功したときの処理
-  //         $form.slideUp()
-  //         $( '.js-success' ).slideDown()
-  //       }, 
-  //       200: function() { 
-  //         //送信に失敗したときの処理 
-  //         $form.slideUp()
-  //         $( '.js-error' ).slideDown()
-  //       }
-  //     } 
-  //   });
-  //   return false; 
-  // });
-  //formの入力確認
+
+  var $form = $('#form'); //formタグにつけたクラス、ID名を指定
+
+  $form.submit(function (e) {
+    $.ajax({
+      url: $form.attr('action'),
+      data: $form.serialize(),
+      type: "POST",
+      dataType: "xml",
+      statusCode: {
+        0: function _() {
+          //送信に成功したときの処理
+          $form.slideUp();
+          $('.js-success').slideDown();
+          $('.p-contact__text').fadeOut();
+        },
+        200: function _() {
+          //送信に失敗したときの処理 
+          $form.slideUp();
+          $('.js-error').slideDown();
+          $('.p-contact__text').fadeOut();
+        }
+      }
+    });
+    return false;
+  }); //formの入力確認
 
   var $submit = $('.js-submit');
   $('.js-form input, .js-form textarea').on('change', function () {
@@ -131,7 +134,6 @@ jQuery(function ($) {
       scrollable: 'スクロールできます'
     }
   });
-  enableOverflowScrolling;
 }); //google map api
 
 window.initMap = function () {
