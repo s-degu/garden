@@ -45,13 +45,14 @@
   &:not(:first-of-type) {
     .p-menu__img-wrap {
       @include mq(md) {
-        width: 79.5801%;
-        padding-top: 83.1417%;
+        padding-top: 82.1417%;
+        width: 100%;
       }
     }
     .p-menu__img-wrap img {
       left: 50%;
       transform: translateX(-50%);
+      width: 79.76%;
     }
     .p-menu__body-wrap {
       @include mq(md) {

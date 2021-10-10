@@ -1449,8 +1449,8 @@ input[type="checkbox"]:checked + .p-form__check::after {
 
 @media screen and (min-width: 768px) {
   .p-menu__item:not(:first-of-type) .p-menu__img-wrap {
-    width: 79.5801%;
-    padding-top: 83.1417%;
+    padding-top: 82.1417%;
+    width: 100%;
   }
 }
 
@@ -1458,6 +1458,7 @@ input[type="checkbox"]:checked + .p-form__check::after {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  width: 79.76%;
 }
 
 @media screen and (min-width: 768px) {
