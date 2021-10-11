@@ -133,6 +133,21 @@ jQuery(function ($) {
     i18n: {
       scrollable: 'スクロールできます'
     }
+  }); // スクロールして表示領域に入ったらclass付与
+  // $(function () {
+  //   $(".js-fadeUp").on("inview", function () {
+  //     $(this).addClass("is-inview");
+  //   });
+  // });
+
+  $('.js-fadeUp').on('inview', function (event, isInView) {
+    if (isInView) {
+      //表示領域に入った時
+      $(this).addClass('is-inview');
+    } else {
+      //表示領域から出た時
+      $(this).removeClass('is-inview'); // $(this).css('opacity',0); //非表示にしておく
+    }
   });
 }); //google map api
 

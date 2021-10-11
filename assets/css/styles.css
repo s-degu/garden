@@ -204,6 +204,32 @@ select::-ms-expand {
   margin: 1px;
 }
 
+/* フェードイン(初期値) */
+.js-fadeUp {
+  opacity: 0;
+  /* 最初は非表示 */
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  /* 下に30pxの位置から */
+  -webkit-transition: opacity .8s, -webkit-transform .8s;
+  transition: opacity .8s, -webkit-transform .8s;
+  transition: opacity .8s, transform .8s;
+  transition: opacity .8s, transform .8s, -webkit-transform .8s;
+  /* 透過率と縦方向の移動を0.8秒 */
+}
+
+/* フェードイン(スクロールした後) */
+.js-fadeUp.is-inview {
+  opacity: 1;
+  /* 表示領域に入ったら表示 */
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  /* 30px上に移動する */
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  /* フェード開始を0.5秒遅らせる */
+}
+
 .l-about {
   padding-top: 64px;
   padding-top: 4rem;
