@@ -1,10 +1,10 @@
 .p-hero__inner {
-  background-image: url(../../../assets/images/img_mv_sp.jpg);
+  background-image: url(../../assets/images/img_mv_sp.jpg);
   background-position: top right -70px;
   background-repeat: no-repeat;
   background-size: contain;
   @include mq(md) {
-    background-image: url(../../../assets/images/img_mv_pc.jpg);
+    background-image: url(../../assets/images/img_mv_pc.jpg);
     background-position: top right -70px;
     padding-bottom: rem(84);
     padding-top: rem(94);

@@ -157,9 +157,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-
 });
-
 
 
 //google map api
@@ -192,11 +190,14 @@ window.initMap = () => {
   });
 
   //マーカーオプション設定
+
+  const image = 'https://ichita-web.com/works/garden//assets/images/google_map_pin.png'; //画像のパス指定
+
   const markerOption = {
     position: center, // マーカーを立てる位置を指定
     map: map, // マーカーを立てる地図を指定
     icon: {
-      url: '../../assets/images/google_map_pin.png'// お好みの画像までのパスを指定
+      url: image
     }
   }
 

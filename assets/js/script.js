@@ -174,14 +174,15 @@ window.initMap = function () {
     styles: styles
   }); //マーカーオプション設定
 
+  var image = 'https://ichita-web.com/works/garden//assets/images/google_map_pin.png'; //画像のパス指定
+
   var markerOption = {
     position: center,
     // マーカーを立てる位置を指定
     map: map,
     // マーカーを立てる地図を指定
     icon: {
-      url: '../../assets/images/google_map_pin.png' // お好みの画像までのパスを指定
-
+      url: image
     }
   }; //マーカー作成
 
