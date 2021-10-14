@@ -1,7 +1,9 @@
 .p-about__text {
   display: block;
   @include mq(md) {
-    padding-right: rem(177);
     letter-spacing: .03em;
+    padding-right: rem(163);
+    padding-top: rem(20);
   }
+  text-align: justify;
 }

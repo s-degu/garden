@@ -6,7 +6,7 @@
     @include mq(md) {
       margin-right: rem(32);
     }
-    margin-top: rem(48);
+    margin-top: rem(51);
   }
   &:last-of-type {
     @include mq(md) {
@@ -30,7 +30,7 @@
     .p-menu__body-wrap {
       @include mq(md) {
         margin-bottom: rem(24);
-        margin-left: rem(-85);
+        margin-left: rem(-90);
       }
     }
     .p-menu__body {
@@ -45,7 +45,7 @@
   &:not(:first-of-type) {
     .p-menu__img-wrap {
       @include mq(md) {
-        padding-top: 82.1417%;
+        padding-top: 82.76%;
         width: 100%;
       }
     }

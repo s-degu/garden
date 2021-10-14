@@ -4,6 +4,6 @@
   padding: rem(10);
   position: relative;
   @include mq(md) {
-    padding: rem(13);
+    padding: rem(9) rem(13) rem(17) rem(14);
   }
 }

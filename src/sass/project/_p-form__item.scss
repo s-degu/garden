@@ -1,5 +1,10 @@
 .p-form__item {
-    & + & {
-        margin-top: rem(32);
-    }
+  @include mq(md) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 67.6203%;
+  }
+  & + & {
+    margin-top: rem(32);
+  }
 }

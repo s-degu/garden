@@ -5,11 +5,12 @@
 
 .p-menu__button a {
   padding-bottom: rem(17);
-  padding-left: rem(37);
-  padding-right: rem(58);
+  padding-left: rem(58);
+  padding-right: rem(77);
   padding-top: rem(16);
   position: relative;
   transition: background-color .3s, color .3s;
+  letter-spacing: 0.03em;
   &:hover {
     @include mq(md) {
       background-color: #333;

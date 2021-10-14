@@ -1,10 +1,13 @@
 .p-footer__copy {
-    margin-top: rem(30);
-    text-align: center;
-    padding-bottom: rem(10);
+  @include mq(md) {
+    margin-top: rem(20);
+  }
+  margin-top: rem(30);
+  padding-bottom: rem(10);
+  text-align: center;
 }
 
 .p-footer__copy small {
-    display: block;
-    font-size: rem(12);
+  display: block;
+  font-size: rem(12);
 }

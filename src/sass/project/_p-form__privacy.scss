@@ -2,5 +2,6 @@
     margin-top: rem(32);
     @include mq(md) {
         text-align: center;
+        margin-top: rem(29);
     }
 }

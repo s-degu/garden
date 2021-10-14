@@ -5,14 +5,14 @@
   // margin-top: rem(-10);
   padding-top: rem(40);
   position: absolute;
-  top: 0;
+  top: -4px;
   transform: translateX(-50%);
   // margin-bottom: rem(24);
   width: 70.3333%;
   @include mq(md) {
-    width: 46.48%;
+    width: 42%;
     padding-top: rem(9);
-    padding-bottom: rem(14);
+    padding-bottom: rem(12);
   }
 }
 

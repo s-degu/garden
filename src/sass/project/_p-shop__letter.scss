@@ -1,6 +1,12 @@
 .p-shop__letter {
   background-color: $white;
   box-shadow: 0 8px 22px -2px;
+  @include mq(md) {
+    margin-top: rem(80);
+    padding-left: rem(34);
+    padding-right: rem(32);
+    padding-top: rem(30);
+  }
   margin-top: rem(98);
   padding-left: rem(10);
   padding-right: rem(10);
@@ -14,20 +20,15 @@
     content: "";
     display: block;
     height: rem(93);
+    @include mq(md) {
+      height: rem(240);
+      left: -101px;
+      top: -74px;
+      width: rem(288);
+    }
     left: -18px;
     position: absolute;
     top: -39px;
     width: rem(112);
-    @include mq(md) {
-      width: rem(288);
-      height: rem(240);
-      top: -98px;
-      left: -117px;
-    }
-  }
-  @include mq(md) {
-    padding-top: rem(30);
-    padding-left: rem(34);
-    padding-right: rem(32);
   }
 }

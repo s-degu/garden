@@ -12,6 +12,7 @@
 
 .p-menu__price--small {
   font-size: rem(18);
+  margin-right: rem(8);
   @include mq(md) {
     font-size: rem(24);
   }

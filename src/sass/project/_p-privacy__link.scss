@@ -1,6 +1,10 @@
 .p-privacy__link {
   display: inline-block;
   letter-spacing: .05em;
+  @include mq(md) {
+    font-size: rem(18);
+    margin-left: rem(20);
+  }
 }
 
 .p-privacy__link--green {

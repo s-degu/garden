@@ -4,13 +4,14 @@
   }
   &:first-of-type {
     @include mq(md) {
-      margin-bottom: rem(48);
+      letter-spacing: 0.05em;
+      margin-bottom: rem(49);
     }
     margin-bottom: rem(24);
   }
   & + & {
     @include mq(md) {
-      margin-top: rem(36);
+      margin-top: rem(26);
     }
     margin-top: rem(31);
   }

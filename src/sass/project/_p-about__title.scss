@@ -4,7 +4,7 @@
   font-weight: bold;
   @include mq(md) {
     font-size: rem(30);
-    margin-bottom: rem(24);
+    margin-bottom: 0;
   }
   margin-bottom: rem(15);
 }

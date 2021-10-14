@@ -1,4 +1,5 @@
 .p-menu__text {
+  letter-spacing: 0.05em;
   @include mq(md) {
     align-items: center;
     display: flex;
@@ -13,7 +14,7 @@
       width: 1px;
     }
     &::before {
-      margin-right: 16px;
+      margin-right: 27px;
       transform: rotate(-35deg);
     }
     &::after {

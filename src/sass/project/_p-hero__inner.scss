@@ -5,9 +5,9 @@
   background-size: contain;
   @include mq(md) {
     background-image: url(../../assets/images/img_mv_pc.jpg);
-    background-position: top right -70px;
+    background-position: top right;
     padding-bottom: rem(84);
-    padding-top: rem(94);
+    padding-top: rem(83);
   }
   padding-bottom: rem(23);
   padding-left: rem(20);

@@ -2,15 +2,24 @@
   font-size: rem(14);
   @include mq(md) {
     font-size: rem(32);
-    margin-top: rem(32);
+    margin-top: rem(51);
   }
   margin-top: rem(15);
+}
+
+.p-hero__sub-title--normal {
+  display: inline-block;
+  letter-spacing: 0.05em;
+  @include mq(md) {
+    padding-left: rem(22);
+  }
 }
 
 .p-hero__sub-title--green {
   background-color: $green;
   color: $white;
   display: inline-block;
-  margin-top: rem(9);
+  letter-spacing: .05em;
+  margin-top: rem(23);
   padding: rem(4) rem(8) rem(7) rem(3);
 }

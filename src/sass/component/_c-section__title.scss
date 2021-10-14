@@ -1,10 +1,11 @@
 .c-section__title {
   font-family: $third-font-family;
   font-size: rem(32);
-  padding-bottom: rem(12);
+  letter-spacing: 0.05em;
   @include mq(md) {
     font-size: rem(48);
   }
+  padding-bottom: rem(17);
   position: relative;
   text-align: center;
   text-transform: capitalize;
@@ -29,16 +30,23 @@
   @include mq(md) {
     font-size: rem(18);
   }
+  letter-spacing: .05em;
   text-align: center;
 }
 
 .c-section__title--menu {
   color: $white;
+  @include mq(md) {
+    padding-bottom: rem(16);
+  }
   padding-bottom: rem(12);
   &::after {
     background-color: $white;
   }
+}
+
+.c-section__title--contact {
   @include mq(md) {
-    padding-bottom: rem(16);
+    padding-bottom: rem(10);
   }
 }

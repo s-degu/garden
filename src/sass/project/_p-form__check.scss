@@ -34,23 +34,29 @@
   border: 1px solid $base-color;
   border-radius: 0;
   height: 30px;
-  left: 5px;
+  @include mq(md) {
+    left: 20px;
+  }
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
+  transition: background-color .3s;
   width: 30px;
-  transition: background-color 0.3s;
 }
 
 .p-form__check::after {
   border-bottom: 2px solid $green;
   border-left: 2px solid $green;
   height: 14px;
-  left: 9px;
+  left: 4px;
   opacity: 0;
   top: -1px;
   transform: rotate(-45deg);
+  transition: opacity .3s;
   width: 22px;
-  transition: opacity 0.3s;
+  @include mq(md) {
+    left: 24px;
+  }
 }
 
 input[type="checkbox"]:checked + .p-form__check::before {

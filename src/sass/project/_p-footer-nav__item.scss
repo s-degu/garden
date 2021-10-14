@@ -1,5 +1,8 @@
 .p-footer-nav__item {
-    & + & {
-        margin-left: rem(32);
+  & + & {
+    @include mq(md) {
+      margin-left: rem(44);
     }
+    margin-left: rem(32);
+  }
 }

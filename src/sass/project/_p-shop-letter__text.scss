@@ -23,4 +23,7 @@
   );
   background-size: 100% 2.5em;
   display: inline-block;
+  @include mq(md) {
+    margin-top: rem(20);
+  }
 }

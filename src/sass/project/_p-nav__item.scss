@@ -2,5 +2,9 @@
     height: inherit;
     & + & {
         margin-left: rem(20);
+        @include mq(md) {
+            margin-left: rem(44);
+            
+        }
     }
 }

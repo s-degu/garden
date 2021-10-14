@@ -8,7 +8,8 @@
   margin-right: auto;
   margin-top: rem(56);
   @include mq(md) {
-      padding-top: 32.2917%;
+    padding-top: 32.2917%;
+    margin-top: rem(80);
   }
 }
 
