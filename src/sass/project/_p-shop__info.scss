@@ -2,10 +2,12 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  line-height: 1.7;
   @include mq(md) {
     font-size: rem(18);
     width: 57.9729%;
     margin-top: 0;
+    line-height: 1.5;
   }
   margin-top: rem(24);
 }

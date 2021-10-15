@@ -1,10 +1,14 @@
 .c-section__title {
   font-family: $third-font-family;
   font-size: rem(32);
-  letter-spacing: 0.05em;
+  margin-top: rem(9);
   @include mq(md) {
     font-size: rem(48);
+    line-height: 1.5;
+    margin-top: 0;
   }
+  letter-spacing: .05em;
+  line-height: 1.1875;
   padding-bottom: rem(17);
   position: relative;
   text-align: center;

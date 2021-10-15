@@ -1,12 +1,15 @@
 .p-footer__logo {
+  @include mq(md) {
     margin-top: rem(34);
+  }
+  margin-top: rem(29);
 }
 
 .p-footer__logo > a {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .p-footer__logo img {
-    width: 166.48px;
+  width: 166.48px;
 }

@@ -1,6 +1,9 @@
 .p-menu__sns-wrap {
-    background-color: $white;
+  background-color: $white;
+  @include mq(md) {
     margin-top: rem(80);
-    padding: rem(10);
-    position: relative;
+  }
+  margin-top: rem(48);
+  padding: rem(10);
+  position: relative;
 }

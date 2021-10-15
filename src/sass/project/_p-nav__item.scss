@@ -1,7 +1,7 @@
 .p-nav__item {
     height: inherit;
     & + & {
-        margin-left: rem(20);
+        margin-left: rem(23);
         @include mq(md) {
             margin-left: rem(44);
             

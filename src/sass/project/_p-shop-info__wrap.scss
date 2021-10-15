@@ -1,6 +1,7 @@
 .p-shop-info__wrap {
-  padding-top: rem(56);
+  padding-top: rem(44);
   @include mq(md) {
     margin-top: rem(22);
+    padding-top: rem(56);
   }
 }

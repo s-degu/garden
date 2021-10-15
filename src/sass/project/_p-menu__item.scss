@@ -50,11 +50,15 @@
       }
     }
     .p-menu__img-wrap img {
+      @include mq(md) {
+        width: 80%;
+      }
       left: 50%;
       transform: translateX(-50%);
-      width: 79.76%;
+      width: 102.66%;
     }
     .p-menu__body-wrap {
+      margin-top: rem(-57);
       @include mq(md) {
         margin-top: rem(-66);
       }

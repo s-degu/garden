@@ -45,10 +45,16 @@
   }
 
   &:last-of-type {
+    @include mq(md) {
+      margin-top: rem(15);
+    }
     .p-about__text-area {
       @include mq(md) {
-        padding-top: rem(70);
+        padding-top: rem(120);
       }
+    }
+    .p-about__img-wrap {
+      margin-top: 48px;
     }
   }
 }

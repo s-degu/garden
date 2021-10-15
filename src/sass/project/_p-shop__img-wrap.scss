@@ -1,12 +1,12 @@
 .p-shop__img-wrap {
-  // margin-top: rem(40);
-  padding-top: 86.88%;
-  position: relative;
   @include mq(md) {
     flex: 0 0 48.6111%;
+    margin-top: 0;
     padding-top: 34.7%;
-
   }
+  margin-top: rem(40);
+  padding-top: 86.88%;
+  position: relative;
 }
 
 .p-shop__img-wrap img {

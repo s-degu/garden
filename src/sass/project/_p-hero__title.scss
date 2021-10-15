@@ -1,12 +1,13 @@
 .p-hero__title {
-    font-size: rem(36);
-    font-family: $third-font-family;
-    @include mq(md) {
-        font-size: rem(100);
-        line-height: 1;
-    }
+  font-family: $third-font-family;
+  font-size: rem(36);
+  line-height: 1.19;
+  @include mq(md) {
+    font-size: rem(100);
+    line-height: 1;
+  }
 }
 
 .p-hero__title--green {
-    color: $green;
+  color: $green;
 }

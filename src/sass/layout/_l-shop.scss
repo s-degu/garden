@@ -1,5 +1,9 @@
 .l-shop {
-    padding-top: rem(120);
+  // padding-bottom: rem(105);
+  @include mq(md) {
     padding-bottom: rem(114);
-    // padding-bottom: rem(105);
+    padding-top: rem(120);
+  }
+  padding-bottom: rem(70);
+  padding-top: rem(63);
 }

@@ -1,7 +1,10 @@
 .fa-external-link-alt {
-    position: absolute;
-    top: 50%;
+  display: inline-block;
+  @include mq(md) {
     right: 34px;
-    transform: translateY(-50%);
-    display: inline-block;
+  }
+  position: absolute;
+  right: 11px;
+  top: 50%;
+  transform: translateY(-50%);
 }

@@ -1,7 +1,7 @@
 .p-hero__text-area {
   @include mq(md) {
     padding-bottom: rem(107);
-    padding-top: rem(120);
+    padding-top: rem(110);
   }
   padding-bottom: rem(63);
   padding-left: rem(16);
@@ -11,7 +11,7 @@
   text-align: center;
   z-index: $layer-default;
   &::after {
-    bottom: -13px;
+    bottom: 2px;
     color: #676767;
     content: "Garden Salad";
     display: block;
@@ -24,9 +24,10 @@
       overflow: hidden;
       text-align: left;
       white-space: nowrap;
+      line-height: 1;
     }
     left: 0;
-    line-height: 1;
+    line-height: 0.7;
     opacity: .3;
     position: absolute;
     right: 0;
