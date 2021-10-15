@@ -628,7 +628,7 @@ select::-ms-expand {
 }
 
 .p-about__number {
-  bottom: -23px;
+  bottom: -54px;
   color: #fff;
   display: inline-block;
   font-family: reross-quadratic, sans-serif;
@@ -645,7 +645,18 @@ select::-ms-expand {
   .p-about__number {
     font-size: 18rem;
     right: 0;
-    top: -55px;
+    top: 0;
+  }
+}
+
+.p-about__number--03 {
+  bottom: -69px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-about__number--03 {
+    bottom: 0;
+    top: 49px;
   }
 }
 
@@ -1084,19 +1095,19 @@ input[type="checkbox"]:checked + .p-form__check::after {
   line-height: 1;
   margin-left: 4px;
   margin-left: 0.25rem;
-  padding-bottom: 3px;
-  padding-bottom: 0.1875rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.3125rem;
   padding-left: 8px;
   padding-left: 0.5rem;
   padding-right: 8px;
   padding-right: 0.5rem;
-  padding-top: 3px;
-  padding-top: 0.1875rem;
+  padding-top: 4px;
+  padding-top: 0.25rem;
 }
 
 @media screen and (min-width: 768px) {
   .p-form__label {
-    margin-left: 1rem;
+    margin-left: 0.9375rem;
   }
 }
 
@@ -1157,6 +1168,16 @@ input[type="checkbox"]:checked + .p-form__check::after {
 .p-form__title {
   font-size: 18px;
   font-size: 1.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-form__title > label {
+  display: inline-block;
 }
 
 .p-form__wrap {
@@ -1166,7 +1187,7 @@ input[type="checkbox"]:checked + .p-form__check::after {
 
 @media screen and (min-width: 768px) {
   .p-form__wrap {
-    margin-top: 3.0625rem;
+    margin-top: 2.875rem;
   }
 }
 
@@ -1335,7 +1356,7 @@ input[type="checkbox"]:checked + .p-form__check::after {
   font-size: 115px;
   font-size: 7.1875rem;
   left: 0;
-  line-height: 0.7;
+  line-height: .7;
   opacity: .3;
   position: absolute;
   right: 0;
@@ -1348,10 +1369,16 @@ input[type="checkbox"]:checked + .p-form__check::after {
     bottom: -33px;
     font-size: 17.5rem;
     left: -43px;
+    line-height: 1;
     overflow: hidden;
     text-align: left;
     white-space: nowrap;
-    line-height: 1;
+  }
+}
+
+@media screen and (min-width: 1710px) {
+  .p-hero__text-area::after {
+    text-align: center;
   }
 }
 
@@ -1832,7 +1859,7 @@ input[type="checkbox"]:checked + .p-form__check::after {
 
 @media screen and (min-width: 768px) {
   .p-menu__sns-wrap {
-    margin-top: 5rem;
+    margin-top: 5.1875rem;
   }
 }
 

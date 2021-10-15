@@ -1,17 +1,26 @@
 .p-about__number {
-  bottom: -23px;
+  bottom: -54px;
   color: $white;
   display: inline-block;
   font-family: $third-font-family;
   font-size: rem(180);
   @include mq(md) {
+    // bottom: -23px;
     font-size: rem(288);
     right: 0;
-    top: -55px;
+    top: 0;
   }
   line-height: 1;
   opacity: .8;
   position: absolute;
   right: -15px;
   z-index: $layer-background;
+}
+
+.p-about__number--03 {
+  bottom: -69px;
+  @include mq(md) {
+    bottom: 0;
+    top: 49px;
+  }
 }

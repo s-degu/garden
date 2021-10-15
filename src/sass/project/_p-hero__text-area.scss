@@ -3,6 +3,7 @@
     padding-bottom: rem(107);
     padding-top: rem(110);
   }
+
   padding-bottom: rem(63);
   padding-left: rem(16);
   padding-right: rem(16);
@@ -21,13 +22,16 @@
       bottom: -33px;
       font-size: rem(280);
       left: -43px;
+      line-height: 1;
       overflow: hidden;
       text-align: left;
       white-space: nowrap;
-      line-height: 1;
+    }
+    @include mq(xxl) {
+      text-align: center;
     }
     left: 0;
-    line-height: 0.7;
+    line-height: .7;
     opacity: .3;
     position: absolute;
     right: 0;

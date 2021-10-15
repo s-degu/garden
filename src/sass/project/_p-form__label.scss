@@ -4,12 +4,12 @@
   color: $white;
   font-size: rem(12);
   @include mq(md) {
-    margin-left: rem(16);
+    margin-left: rem(15);
   }
   line-height: 1;
   margin-left: rem(4);
-  padding-bottom: rem(3);
+  padding-bottom: rem(5);
   padding-left: rem(8);
   padding-right: rem(8);
-  padding-top: rem(3);
+  padding-top: rem(4);
 }
