@@ -749,8 +749,8 @@ select::-ms-expand {
 
 .p-contact__wrap {
   background-color: #f2f2f2;
-  padding-bottom: 66px;
-  padding-bottom: 4.125rem;
+  padding-bottom: 62px;
+  padding-bottom: 3.875rem;
   padding-left: 16px;
   padding-left: 1rem;
   padding-right: 15px;
@@ -1125,6 +1125,8 @@ input[type="checkbox"]:checked + .p-form__check::after {
 
 .p-form__submit-wrap {
   text-align: center;
+  margin-top: 44px;
+  margin-top: 2.75rem;
 }
 
 .p-form__submit {
@@ -1132,8 +1134,6 @@ input[type="checkbox"]:checked + .p-form__check::after {
   color: #fff;
   font-size: 18px;
   font-size: 1.125rem;
-  margin-top: 40px;
-  margin-top: 2.5rem;
   max-width: 300px;
   max-width: 18.75rem;
   padding-bottom: 14px;
@@ -1343,7 +1343,7 @@ input[type="checkbox"]:checked + .p-form__check::after {
 @media screen and (min-width: 768px) {
   .p-hero__text-area {
     padding-bottom: 6.6875rem;
-    padding-top: 6.875rem;
+    padding-top: 7.8125rem;
   }
 }
 
@@ -1392,18 +1392,6 @@ input[type="checkbox"]:checked + .p-form__check::after {
   }
 }
 
-.p-hero__text:first-of-type {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-}
-
-@media screen and (min-width: 768px) {
-  .p-hero__text:first-of-type {
-    letter-spacing: .05em;
-    margin-bottom: 3.0625rem;
-  }
-}
-
 .p-hero__text + .p-hero__text {
   margin-top: 24px;
   margin-top: 1.5rem;
@@ -1419,11 +1407,15 @@ input[type="checkbox"]:checked + .p-form__check::after {
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: bold;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
   .p-hero__text--large {
     font-size: 1.875rem;
+    letter-spacing: .05em;
+    margin-bottom: 2.6875rem;
   }
 }
 

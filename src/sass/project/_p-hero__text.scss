@@ -3,13 +3,6 @@
     font-size: rem(18);
   }
   letter-spacing: .03em;
-  &:first-of-type {
-    @include mq(md) {
-      letter-spacing: .05em;
-      margin-bottom: rem(49);
-    }
-    margin-bottom: rem(24);
-  }
   & + & {
     @include mq(md) {
       margin-top: rem(26);
@@ -18,10 +11,14 @@
   }
 }
 
+
 .p-hero__text--large {
   font-size: rem(20);
   font-weight: bold;
   @include mq(md) {
     font-size: rem(30);
+    letter-spacing: .05em;
+    margin-bottom: rem(43);
   }
+  margin-bottom: rem(24);
 }
