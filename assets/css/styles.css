@@ -157,12 +157,6 @@ select {
 }
 
 /* Blur images when they have no alt attribute */
-img:not([alt]) {
-  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
-}
-
 /* フォームリセット */
 input,
 button,
@@ -1342,7 +1336,7 @@ input[type="checkbox"]:checked + .p-form__check::after {
 
 @media screen and (min-width: 768px) {
   .p-hero__text-area {
-    padding-bottom: 6.6875rem;
+    padding-bottom: 6.75rem;
     padding-top: 7.8125rem;
   }
 }
@@ -2302,7 +2296,7 @@ input[type="checkbox"]:checked + .p-form__check::after {
 }
 
 .p-shop__letter::after {
-  background-image: url(../../../assets/images/stamp.png);
+  background-image: url(../../assets/images/stamp.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
